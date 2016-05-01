@@ -27,6 +27,7 @@ if ($daycount>=0 && $daycount<$interval) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -51,6 +52,10 @@ if ($daycount>=0 && $daycount<$interval) {
         text-align: justify;
         text-indent : 2em ;
     }
+    .speaker{
+        font-size: 16px;
+    }
+
     li.my-social-buttons {
         margin-bottom: 0 ;
     }
@@ -58,15 +63,16 @@ if ($daycount>=0 && $daycount<$interval) {
     li.my-social-buttons p{
         line-height:40px;
         height: 40px;
-        width: 255px;
+        width: calc(100%-10px);
         margin-left: 10px;
-        margin-right: 10px;
         float:left;
+
         font-size: 15px;
     }
 
 
     li.my-social-buttons a {
+        clear:left;
         float:left;
         display: block;
         background-color: #222;
@@ -220,7 +226,20 @@ if ($daycount>=0 && $daycount<$interval) {
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-6 speaker">
+                    <ul>
+                        <?php foreach ($data['cn_speaker'] as $key => $value) {?>
 
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt><?php echo $value['cname'];?> <?php echo $value['ename'];?></dt>
+                                <dd><?php echo $value['affiliation'];?></dd>
+
+                            </dl>
+                        </li>
+                        <?php }?>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -410,7 +429,7 @@ if ($daycount>=0 && $daycount<$interval) {
                     <div class="team-member">
                         <ul class="list-unstyled">
                             <li class="my-social-buttons"><a href="tel:+88662757575"><i class="fa fa-phone"></i></a><p>06-2757575 轉 65156 轉 415</p></li>
-                            <li class="my-social-buttons"><a href="mailto:l18021010@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>l18021010@mail.ncku.edu.tw</p></li>
+                            <li class="my-social-buttons"><a href="mailto:l18021010@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>L18021010@mail.ncku.edu.tw</p></li>
                         </ul>
                     </div>
                 </div>

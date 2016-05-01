@@ -69,6 +69,30 @@
             {"time":"17:10 ~ 20:00","content":"晚餐","place":"3173","talkid":0}
         ]
     ],
+    "cn_speaker":[
+        {"cname":"沈捷","ename":"Jie Shen","affiliation":"福建省廈門大學數學科學學院"},
+        {"cname":"許傳炬","ename":"Chuanju Xu","affiliation":"福建省廈門大學數學科學學院"},
+        {"cname":"張智民","ename":"Zhimin Zhang","affiliation":"北京計算科學研究中心"},
+        {"cname":"陳艷萍","ename":"Yanping Chen","affiliation":"廣東省華南師範大學數學科學學院"},
+        {"cname":"黃雲清","ename":"Yunging Huang","affiliation":"湖南省湘潭大學"},
+        {"cname":"張平文","ename":"Pingwen Zhang","affiliation":"北京市北京大學數學科學學院"},
+        {"cname":"謝小平","ename":"Xiaoping Xie","affiliation":"四川省四川大學數學學院"},
+        {"cname":"徐立偉","ename":"Liwei Xu","affiliation":"重慶市重慶大學數學與統計學院"},
+        {"cname":"楊志堅","ename":"Zhijian Yang","affiliation":"湖北省武漢大學數學與統計學院"},
+        {"cname":"韋維","ename":"Wei Wei","affiliation":"貴州省貴州民族大學"},
+        {"cname":"魏益民","ename":"Yimin Wei","affiliation":"上海市復旦大學數學科學學院"},
+        {"cname":"謝資清","ename":"Ziqing Xie","affiliation":"湖南省湖南師範大學數學與科學計算科學學院"},
+        {"cname":"張然","ename":"Ran Zhang","affiliation":"吉林省吉林大學數學學院"},
+        {"cname":"武海軍","ename":"Haijun Wu","affiliation":"江蘇省南京大學數學系"},
+        {"cname":"陳金如","ename":"Jinru Chen","affiliation":"江蘇省南京師範大學數學科學學院"},
+        {"cname":"許學軍","ename":"Xuejun Xu","affiliation":"中科院數學與系統科學研究所"},
+        {"cname":"許躍生","ename":"Yuesheng Xu","affiliation":"廣東省中山大學科學計算與計算機應用系"},
+        {"cname":"包剛","ename":"Gang Bao","affiliation":"浙江省浙江大學數學系"},
+        {"cname":"吳勃英","ename":"Boying Wu","affiliation":"黑龍江省哈爾濱工業大學數學系"},
+        {"cname":"李 明","ename":"Ming Li","affiliation":"山西太原理工大學數學研究所"},
+        {"cname":"周愛輝","ename":"Aihui Zhou","affiliation":"中科院計算數學研究所"},
+        {"cname":"","ename":"Ping Lin","affiliation":"北京科技大學&Dundee University"}
+    ],
     "talk":{
         "t1":{
             "title":"演講一",
