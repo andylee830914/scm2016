@@ -51,6 +51,41 @@ if ($daycount>=0 && $daycount<$interval) {
         text-align: justify;
         text-indent : 2em ;
     }
+    li.my-social-buttons {
+        margin-bottom: 0 ;
+    }
+
+    li.my-social-buttons p{
+        line-height:40px;
+        height: 40px;
+        width: 255px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float:left;
+        font-size: 15px;
+    }
+
+
+    li.my-social-buttons a {
+        float:left;
+        display: block;
+        background-color: #222;
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+        outline: 0;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+
+    li.my-social-buttons  a:hover, li.my-social-buttons a:focus, li.my-social-buttons a:active {
+        background-color: #fed136
+    }
 </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -274,8 +309,10 @@ if ($daycount>=0 && $daycount<$interval) {
                     <p class="abstract">最早是淡江大學和北京大學輪辦的「海峽兩岸數學研討會」。1995年在淡江大學舉辦第一屆，1998年在北京大學辦第二屆，2000年又回淡江大學，…，2007年淡江辦完後，2009在北大，去年再回淡江。</p>
                     <p class="abstract">接著是「海峽兩岸統計及概率研討會」，由高雄中山大學在1996年創辦第一屆，第二屆於1999年在蘇州大學舉行，之後改成每兩年辦一次，2010年在成功大學舉辦第七屆會議。</p>
                     <p class="abstract">另外「海峽兩岸圖論與組合學研討會」於2001年在昆明辦第一屆，2002年在中央研究院開第二屆，2005年第三屆在金華浙江師範大學，2007年第四屆在台灣大學，2009年由天津南開大學辦第五屆會議，去年則由交通大學主辦第六屆。</p>
-                    <p class="abstract">計算數學方面，1996年中國計算學會理事長石鐘慈院士來中山大學訪問，並參加中興大學在蕙蓀林場主辦的國內計算數學會議，會中石院士提出是否輪辦「兩岸計算數學研討會」的議題，但因有人反對遂無疾而終。此一議題兩岸蹉跎了14年，很高興2010年廈門大學終於開辦了第一屆的會議，會中決議由中山大學主辦第二屆。</p>
-                    <p class="abstract">此次大會齊聚台灣和大陸的計算專家於中山大學，增進雙方人員的瞭解，交換彼此的研究心得，提供大家相互交流切磋的機會，加強兩岸人員未來的合作與整合，開發可能合作的研究課題。期能刺激新的數學模型與數值方法，促進跨領域的合作研究，拓展出計算方法更廣泛的應用。</p>
+                    <p class="abstract">計算數學方面，1996年中國計算學會理事長石鐘慈院士來中山大學訪問，並參加中興大學在蕙蓀林場主辦的國內計算數學會議，會中石院士提出是否輪辦「兩岸計算數學研討會」的議題，但因有人反對遂無疾而終。此一議題兩岸蹉跎了14年，很高興2010年廈門大學終於開辦了第一屆的會議，
+                        會中決議由中山大學主辦第二屆，在2016年，則由成功大學舉辦第四屆兩岸計算數學研討會。</p>
+                    <p class="abstract">此次大會齊聚台灣和大陸的計算專家於成功大學，增進雙方人員的瞭解，交換彼此的研究心得，提供大家相互交流切磋的機會，加強兩岸人員未來的合作與整合，開發可能合作的研究課題。期能刺激新的數學模型與數值方法，促進跨領域的合作研究，拓展出計算方法更廣泛的應用。</p>
+
                 </div>
                 <!--<div class="col-lg-12">
                     <ul class="timeline">
@@ -358,55 +395,24 @@ if ($daycount>=0 && $daycount<$interval) {
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <!--<img src="" class="img-responsive img-circle" alt="">-->
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4>廖士綱 先生</h4>
+                        <p class="text-muted">國立成功大學數學系</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4 col-md-5 col-sm-6">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
+                        <ul class="list-unstyled">
+                            <li class="my-social-buttons"><a href="tel:+88662757575"><i class="fa fa-phone"></i></a><p>06-2757575 轉 65156 轉 415</p></li>
+                            <li class="my-social-buttons"><a href="mailto:l18021010@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>l18021010@mail.ncku.edu.tw</p></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div>
         </div>
