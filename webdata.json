@@ -1,0 +1,84 @@
+{
+    "info":{
+        "title":"第四屆<br>海峽兩岸計算數學研討會",
+        "short-title":"2016 海峽兩岸計算數學研討會",
+        "begin-date":"2016-07-25",
+        "end-date":"2016-07-28",
+        "place":"國立成功大學"
+    },
+    "news":[
+        {"date":"2016-04-29","content":"你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！"},
+        {"date":"2016-04-30","content":"你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！"},
+        {"date":"2016-05-01","content":"你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！你好，世界！"}
+    ],
+    "schedule":[
+        [
+            {"time":"08:40 ~ 09:40","content":"註冊 茶會","place":"3173","talkid":0},
+            {"time":"09:40 ~ 10:00","content":"開幕式","place":"3173","talkid":0},
+            {"time":"10:00 ~ 11:00","content":"演講一","place":"3173","talkid":"t1"},
+            {"time":"11:00 ~ 11:20","content":"茶會","place":"3173","talkid":0},
+            {"time":"11:20 ~ 12:20","content":"演講二","place":"3173","talkid":"t2"},
+            {"time":"12:20 ~ 13:30","content":"茶會","place":"3173","talkid":0},
+            {"time":"13:30 ~ 14:30","content":"演講三","place":"3173","talkid":"t3"},
+            {"time":"14:30 ~ 14:50","content":"茶會","place":"3173","talkid":0},
+            {"time":"14:50 ~ 15:50","content":"演講四","place":"3173","talkid":"t4"},
+            {"time":"15:50 ~ 16:10","content":"茶會","place":"3173","talkid":0},
+            {"time":"16:10 ~ 17:10","content":"演講五","place":"3173","talkid":"t5"},
+            {"time":"17:10 ~ 20:00","content":"晚餐","place":"3173","talkid":0}
+        ],
+        [
+            {"time":"08:40 ~ 09:40","content":"註冊 茶會","place":"3173","talkid":0},
+            {"time":"09:40 ~ 10:00","content":"開幕式","place":"3173","talkid":0},
+            {"time":"10:00 ~ 11:00","content":"演講一","place":"3173","talkid":"t6"},
+            {"time":"11:00 ~ 11:20","content":"茶會","place":"3173","talkid":0},
+            {"time":"11:20 ~ 12:20","content":"演講二","place":"3173","talkid":"t7"},
+            {"time":"12:20 ~ 13:30","content":"茶會","place":"3173","talkid":0},
+            {"time":"13:30 ~ 14:30","content":"演講三","place":"3173","talkid":"t8"},
+            {"time":"14:30 ~ 14:50","content":"茶會","place":"3173","talkid":0},
+            {"time":"14:50 ~ 15:50","content":"演講四","place":"3173","talkid":"t9"},
+            {"time":"15:50 ~ 16:10","content":"茶會","place":"3173","talkid":0},
+            {"time":"16:10 ~ 17:10","content":"演講五","place":"3173","talkid":"t10"},
+            {"time":"17:10 ~ 20:00","content":"晚餐","place":"3173","talkid":0}
+        ],
+        [
+            {"time":"08:40 ~ 09:40","content":"註冊 茶會","place":"3173","talkid":0},
+            {"time":"09:40 ~ 10:00","content":"開幕式","place":"3173","talkid":0},
+            {"time":"10:00 ~ 11:00","content":"演講一","place":"3173","talkid":"t11"},
+            {"time":"11:00 ~ 11:20","content":"茶會","place":"3173","talkid":0},
+            {"time":"11:20 ~ 12:20","content":"演講二","place":"3173","talkid":"t12"},
+            {"time":"12:20 ~ 13:30","content":"茶會","place":"3173","talkid":0},
+            {"time":"13:30 ~ 14:30","content":"演講三","place":"3173","talkid":"t13"},
+            {"time":"14:30 ~ 14:50","content":"茶會","place":"3173","talkid":0},
+            {"time":"14:50 ~ 15:50","content":"演講四","place":"3173","talkid":"t14"},
+            {"time":"15:50 ~ 16:10","content":"茶會","place":"3173","talkid":0},
+            {"time":"16:10 ~ 17:10","content":"演講五","place":"3173","talkid":"t15"},
+            {"time":"17:10 ~ 20:00","content":"晚餐","place":"3173","talkid":0}
+        ],
+        [
+            {"time":"08:40 ~ 09:40","content":"註冊 茶會","place":"3173","talkid":0},
+            {"time":"09:40 ~ 10:00","content":"開幕式","place":"3173","talkid":0},
+            {"time":"10:00 ~ 11:00","content":"演講一","place":"3173","talkid":"t16"},
+            {"time":"11:00 ~ 11:20","content":"茶會","place":"3173","talkid":0},
+            {"time":"11:20 ~ 12:20","content":"演講二","place":"3173","talkid":"t17"},
+            {"time":"12:20 ~ 13:30","content":"茶會","place":"3173","talkid":0},
+            {"time":"13:30 ~ 14:30","content":"演講三","place":"3173","talkid":"t18"},
+            {"time":"14:30 ~ 14:50","content":"茶會","place":"3173","talkid":0},
+            {"time":"14:50 ~ 15:50","content":"演講四","place":"3173","talkid":"t19"},
+            {"time":"15:50 ~ 16:10","content":"茶會","place":"3173","talkid":0},
+            {"time":"16:10 ~ 17:10","content":"演講五","place":"3173","talkid":"t20"},
+            {"time":"17:10 ~ 20:00","content":"晚餐","place":"3173","talkid":0}
+        ]
+    ],
+    "talk":{
+        "t1":{
+            "title":"演講一",
+            "speaker":"成大數學系",
+            "abstract":"Image segmentation is an essential problem in imaging science. One of the most successful segmentation models is the piecewise constant Mumford-Shah minimization model. This minimization problem is however difficult to carry out, mainly due to the non-convexity of the energy. Recent advances based on convex relaxation methods are capable of estimating almost perfectly the geometry of the regions to be segmented when the mean intensity and the number of segmented regions are known a priori. The next important challenge is to provide a tight approximation of the optimal geometry, mean intensity and the number of regions simultaneously while keeping the computational time and memory usage reasonable.\n In this work, we propose a new algorithm that combines convex relaxation methods with the four color theorem to deal with the unsupervised segmentation problem. The proposed algorithm can segment any a priori unknown number of regions with only four intensity functions and four indicator (labeling) functions. The number of regions in our segmentation model is decided by one parameter that controls the regularization strength of the geometry, i.e., the total length of the boundary of all the regions. The segmented image function can take as many constant values as needed. We will present the detail about the new model as well the numerical techniques used to solve it."
+        },
+        "t2":{
+            "title":"演講二",
+            "speaker":"成大數學系 abcd",
+            "abstract":"Image segmentation is an essential problem in imaging science. One of the most successful segmentation models is the piecewise constant Mumford-Shah minimization model. This minimization problem is however difficult to carry out, mainly due to the non-convexity of the energy. Recent advances based on convex relaxation methods are capable of estimating almost perfectly the geometry of the regions to be segmented when the mean intensity and the number of segmented regions are known a priori. The next important challenge is to provide a tight approximation of the optimal geometry, mean intensity and the number of regions simultaneously while keeping the computational time and memory usage reasonable.\n In this work, we propose a new algorithm that combines convex relaxation methods with the four color theorem to deal with the unsupervised segmentation problem. The proposed algorithm can segment any a priori unknown number of regions with only four intensity functions and four indicator (labeling) functions. The number of regions in our segmentation model is decided by one parameter that controls the regularization strength of the geometry, i.e., the total length of the boundary of all the regions. The segmented image function can take as many constant values as needed. We will present the detail about the new model as well the numerical techniques used to solve it."
+        }
+    }
+}
