@@ -52,6 +52,11 @@ if ($daycount>=0 && $daycount<$interval) {
         text-align: justify;
         text-indent : 2em ;
     }
+    .form-group{
+        color: white;
+        font-size: 20px;
+        line-height: 25px;
+    }
     .speaker{
         font-size: 16px;
     }
@@ -464,24 +469,100 @@ if ($daycount>=0 && $daycount<$interval) {
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
+                                <div class="col-lg-12 text-center">
+                                    <h4 class="section-heading">基本資料</h4>
+                                </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <select class="form-control" required data-validation-required-message="Please select your title." id="title" name="title">
+                                        <option disabled>職稱 Title</option>
+                                        <option>Prof.</option>
+                                        <option>Dr.</option>
+                                        <option>Mr.</option>
+                                        <option>Mrs.</option>
+                                        <option>Student</option>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="姓名 (Last name, First name) *" id="name" name="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="text" class="form-control" placeholder="服務單位 (Affiliation) *" id="affiliation" name="affiliation" required data-validation-required-message="Please enter your affiliation.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="email" class="form-control" placeholder="電子郵件 (Email) *" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="電話 (Primary Phone/ Mobile Phone) *" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
+                                <div class="col-lg-12 text-center">
+                                    <h4 class="section-heading">用餐調查</h4>
+
                                 </div>
+                                <div class="form-group">
+                                    <label for="meal" class="col-sm-3 control-label">葷素</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meal" id="inlineRadio1" value="nonvege" required> 葷
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meal" id="inlineRadio2" value="vegetarian" required> 素
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="meald1" class="col-sm-3 control-label">7/25 午餐</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald1" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald1" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="meald2" class="col-sm-3 control-label">7/26 午餐</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald2" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald2" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="meald3" class="col-sm-3 control-label">7/27 午餐</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald3" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald3" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="meald4" class="col-sm-3 control-label">7/28 午餐</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald4" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald4" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">

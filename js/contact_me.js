@@ -8,7 +8,9 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
+            var title = $("select#title").val();
             var name = $("input#name").val();
+            var affiliation = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
@@ -18,14 +20,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://script.google.com/macros/s/AKfycby3ZGloD253wnEQ3RzfnJ4RRYSwh13jKwztrDrGaigSVmKUmmn_/exec",
                 type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
+                data: $( "#contactForm" ).serialize()+"&callback=success",
                 cache: false,
                 success: function() {
                     // Success message
