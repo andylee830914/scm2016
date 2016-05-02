@@ -60,7 +60,9 @@ if ($daycount>=0 && $daycount<$interval) {
     .speaker{
         font-size: 16px;
     }
-
+    .myphoto{
+        height: 150px;
+    }
     li.my-social-buttons {
         margin-bottom: 0 ;
     }
@@ -68,7 +70,7 @@ if ($daycount>=0 && $daycount<$interval) {
     li.my-social-buttons p{
         line-height:40px;
         height: 40px;
-        width: calc(100%-10px);
+        width: calc(100%-50px);
         margin-left: 10px;
         float:left;
 
@@ -83,7 +85,7 @@ if ($daycount>=0 && $daycount<$interval) {
         background-color: #222;
         height: 40px;
         width: 40px;
-        margin-left: 15px;
+        margin-left: 0px;
         border-radius: 100%;
         font-size: 20px;
         line-height: 40px;
@@ -231,9 +233,13 @@ if ($daycount>=0 && $daycount<$interval) {
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 speaker">
+                <?php $total=count($data['cn_speaker']);?>
+                <?php $i=0;?>
+                <?php foreach ($data['cn_speaker'] as $key => $value) {?>
+                <?php if ($i==0) {?>
+                <div class="col-md-3 speaker">
+                <?php }?>
                     <ul>
-                        <?php foreach ($data['cn_speaker'] as $key => $value) {?>
 
                         <li>
                             <dl class="list-unstyled" style="height:55px">
@@ -242,9 +248,15 @@ if ($daycount>=0 && $daycount<$interval) {
 
                             </dl>
                         </li>
-                        <?php }?>
                     </ul>
-                </div>
+                    <?php $i++;?>
+                    <?php if ($i==ceil($total/2)) {
+                        $i=0;
+                    ?>
+                    </div>
+                    <?php }?>
+                <?php }?>
+
             </div>
         </div>
     </section>
@@ -419,25 +431,33 @@ if ($daycount>=0 && $daycount<$interval) {
                 </div>
             </div>
             <div class="row">
+                <?php foreach ($data['contact'] as $key => $value) {?>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <!--<img src="" class="img-responsive img-circle" alt="">-->
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <?php
+                            $size=count($value['photo']);
+                            $int=rand(0,$size-1);
+                        ?>
+                        <?php if($size>0){?>
+                            <img src="././img/team/<?php echo $value['photo'][$int];?> " class="img-responsive img-circle myphoto" alt="">
+                        <?php }else{?>
+                        <span class="fa-stack fa-5x" >
+                            <i class="fa fa-circle fa-stack-2x text-primary" ></i>
                             <i class="fa fa-user fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4>廖士綱 先生</h4>
-                        <p class="text-muted">國立成功大學數學系</p>
+                        <div style="font-size:0;height:10px;"></div>
+                        <?php }?>
+                        <h4><?php echo $value['name'];?></h4>
+                        <p class="text-muted"><?php echo $value['affiliation'];?></p>
+                        <div class="team-member">
+                            <ul class="list-unstyled">
+                                <li class="my-social-buttons"><a href="tel:<?php echo $value['phone_href'];?>"><i class="fa fa-phone"></i></a><p><?php echo $value['phone_show'];?></p></li>
+                                <li class="my-social-buttons"><a href="mailto:<?php echo $value['email'];?>"><i class="fa fa-envelope"></i></a><p><?php echo $value['email'];?></p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-6">
-                    <div class="team-member">
-                        <ul class="list-unstyled">
-                            <li class="my-social-buttons"><a href="tel:+88662757575"><i class="fa fa-phone"></i></a><p>06-2757575 轉 65156 轉 415</p></li>
-                            <li class="my-social-buttons"><a href="mailto:l18021010@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>L18021010@mail.ncku.edu.tw</p></li>
-                        </ul>
-                    </div>
-                </div>
+                <?php }?>
             </div>
         </div>
     </section>
@@ -547,17 +567,6 @@ if ($daycount>=0 && $daycount<$interval) {
                                     </label>
                                     <label class="radio-inline">
                                         <input type="radio" name="meald3" id="inlineRadio2" value="no" required> 否
-                                    </label>
-                                    <p class="help-block text-danger"></p>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="meald4" class="col-sm-3 control-label">7/28 午餐</label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="meald4" id="inlineRadio1" value="yes" required> 是
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="meald4" id="inlineRadio2" value="no" required> 否
                                     </label>
                                     <p class="help-block text-danger"></p>
 
