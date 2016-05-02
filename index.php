@@ -62,6 +62,7 @@ if ($daycount>=0 && $daycount<$interval) {
     }
     .myphoto{
         height: 150px;
+        clear:left;
     }
     li.my-social-buttons {
         margin-bottom: 0 ;
@@ -85,7 +86,7 @@ if ($daycount>=0 && $daycount<$interval) {
         background-color: #222;
         height: 40px;
         width: 40px;
-        margin-left: 0px;
+        margin: 0px;
         border-radius: 100%;
         font-size: 20px;
         line-height: 40px;
