@@ -567,7 +567,7 @@ if ($daycount>=0 && $daycount<$interval) {
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">確定報名</button>
                             </div>
                         </div>
                     </form>

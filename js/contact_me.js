@@ -20,9 +20,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycby3ZGloD253wnEQ3RzfnJ4RRYSwh13jKwztrDrGaigSVmKUmmn_/exec",
+                url: "././mail/contact_me.php",
                 type: "POST",
-                data: $( "#contactForm" ).serialize()+"&callback=success",
+                data: $( "#contactForm" ).serialize(),
                 cache: false,
                 success: function() {
                     // Success message
@@ -30,7 +30,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>我們已收到您的報名資料，謝謝！</strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -42,7 +42,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>對不起 " + firstName + "，現在可能出了點問題，請稍候再試！");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");

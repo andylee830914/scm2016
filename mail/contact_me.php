@@ -8,11 +8,20 @@ if(empty($_POST['name'])  		||
 	echo "No arguments Provided!";
 	return false;
    }
-
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$phone = $_POST['phone'];
-print_r($_POST);
+$toURL = "https://script.google.com/macros/s/AKfycby3ZGloD253wnEQ3RzfnJ4RRYSwh13jKwztrDrGaigSVmKUmmn_/exec";
+$ch = curl_init();
+$options = array(
+	CURLOPT_URL=>$toURL,
+	CURLOPT_HEADER=>0,
+	CURLOPT_VERBOSE=>0,
+	CURLOPT_RETURNTRANSFER=>true,
+	CURLOPT_USERAGENT=>"Mozilla/4.0 (compatible;)",
+	CURLOPT_POST=>true,
+	CURLOPT_POSTFIELDS=>http_build_query($_POST),
+);
+curl_setopt_array($ch, $options);
+$result = curl_exec($ch);
+curl_close($ch);
 // Create the email and send the message
 //$to = 'yourname@yourdomain.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 //$email_subject = "Website Contact Form:  $name";
