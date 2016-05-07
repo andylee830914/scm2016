@@ -46,6 +46,8 @@ if ($daycount>=0 && $daycount<$interval) {
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <style>
     .abstract{
         font-size:16px;
@@ -63,6 +65,43 @@ if ($daycount>=0 && $daycount<$interval) {
     .myphoto{
         height: 150px;
         clear:left;
+    }
+    .bg-dark-gray{
+        background-color:#f2f2f2
+    }
+    .mythumb{
+        display:inline-block;
+        position:relative;
+        width:160px;
+        height:160px;
+        text-align : center;
+        line-height : 160px;
+        overflow:hidden;
+    }
+    .mythumb img{
+        float: left;
+        line-height: 160px;
+        text-align: center;
+        width:auto;
+        height:100%;
+        vertical-align : middle;
+    }
+    #links {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media (max-width: 768px) {
+        .mythumb{
+            width:100px;
+            height: 100px;
+        }
+        .mythumb img{
+            line-height: 100px;
+        }
+        #links {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
     li.my-social-buttons {
         margin-bottom: 0 ;
@@ -111,7 +150,39 @@ if ($daycount>=0 && $daycount<$interval) {
 </head>
 
 <body id="page-top" class="index">
-
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -143,6 +214,9 @@ if ($daycount>=0 && $daycount<$interval) {
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">關於會議</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gallery">活動相簿</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">聯絡我們</a>
@@ -220,6 +294,7 @@ if ($daycount>=0 && $daycount<$interval) {
                     <h4 class="service-heading">Web Security</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>-->
+
             </div>
         </div>
     </section>
@@ -422,6 +497,29 @@ if ($daycount>=0 && $daycount<$interval) {
         </div>
     </section>
 
+    <section id="gallery"  class="bg-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">活動相簿</h2>
+                    <h3 class="section-subheading text-muted">Gallery</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="links">
+                    <?php foreach (glob("img/gallery/{*.JPG,*.jpg}", GLOB_BRACE) as $filename) {?>
+                    <?php $filename1=explode("/", $filename);?>
+                    <?php $filename1=explode(".", $filename1[2]);?>
+                        <a href="<?php echo $filename;?>" title="<?php echo $filename1[0];?>" data-gallery class="mythumb">
+                            <img src="<?php echo $filename;?>" alt="<?php echo $filename1[0];?>">
+                        </a>
+                    <?php } ?>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
@@ -528,7 +626,7 @@ if ($daycount>=0 && $daycount<$interval) {
 
                                 </div>
                                 <div class="form-group">
-                                    <label for="meal" class="col-sm-3 control-label">葷素</label>
+                                    <label for="meal" class="col-sm-4 control-label">葷素</label>
                                     <label class="radio-inline">
                                         <input type="radio" name="meal" id="inlineRadio1" value="nonvege" required> 葷
                                     </label>
@@ -540,7 +638,7 @@ if ($daycount>=0 && $daycount<$interval) {
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="meald1" class="col-sm-3 control-label">7/25 午餐</label>
+                                    <label for="meald1" class="col-sm-4 control-label">7/25 午餐</label>
                                     <label class="radio-inline">
                                         <input type="radio" name="meald1" id="inlineRadio1" value="yes" required> 是
                                     </label>
@@ -551,7 +649,7 @@ if ($daycount>=0 && $daycount<$interval) {
 
                                 </div>
                                 <div class="form-group">
-                                    <label for="meald2" class="col-sm-3 control-label">7/26 午餐</label>
+                                    <label for="meald2" class="col-sm-4 control-label">7/26 午餐</label>
                                     <label class="radio-inline">
                                         <input type="radio" name="meald2" id="inlineRadio1" value="yes" required> 是
                                     </label>
@@ -562,7 +660,7 @@ if ($daycount>=0 && $daycount<$interval) {
 
                                 </div>
                                 <div class="form-group">
-                                    <label for="meald3" class="col-sm-3 control-label">7/27 午餐</label>
+                                    <label for="meald3" class="col-sm-4 control-label">7/27 午餐</label>
                                     <label class="radio-inline">
                                         <input type="radio" name="meald3" id="inlineRadio1" value="yes" required> 是
                                     </label>
@@ -672,6 +770,16 @@ if ($daycount>=0 && $daycount<$interval) {
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script src="js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+
+    <script>
+    $('#image-gallery-button').on('click', function (event) {
+        event.preventDefault()
+        blueimp.Gallery($('#links a'), $('#blueimp-gallery').data())
+    })
+    </script>
 
 </body>
 
