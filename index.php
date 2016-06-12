@@ -497,6 +497,7 @@ if ($daycount>=0 && $daycount<$interval) {
         </div>
     </section>
 
+<!-- temp remove gallery
     <section id="gallery"  class="bg-dark-gray">
         <div class="container">
             <div class="row">
@@ -507,6 +508,7 @@ if ($daycount>=0 && $daycount<$interval) {
             </div>
             <div class="row">
                 <div id="links">
+                <?php /*?>
                     <?php foreach (glob("img/gallery/{*.JPG,*.jpg}", GLOB_BRACE) as $filename) {?>
                     <?php $filename1=explode("/", $filename);?>
                     <?php $filename1=explode(".", $filename1[2]);?>
@@ -514,12 +516,14 @@ if ($daycount>=0 && $daycount<$interval) {
                             <img src="<?php echo $filename;?>" alt="<?php echo $filename1[0];?>">
                         </a>
                     <?php } ?>
+                <?php */?>
                 </div>
             </div>
 
         </div>
 
     </section>
+-->
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
