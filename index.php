@@ -1,9 +1,9 @@
 <?php
 $string = file_get_contents("webdata.json");
 $data = json_decode($string, true);
-$begindate = date_create($data['info']['begin-date']);
+$begindate = date_create($data['info']['begin_date']);
 $begindate1 = date_format($begindate, 'Y/m/d');
-$enddate = date_create($data['info']['end-date']);
+$enddate = date_create($data['info']['end_date']);
 $enddate1 = date_format($enddate, 'Y/m/d');
 $timeplace = $begindate1.'~'.$enddate1.' @ '.$data['info']['place'];
 
@@ -771,6 +771,7 @@ if ($daycount>=0 && $daycount<$interval) {
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script src="js/timetable.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
