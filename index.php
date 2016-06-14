@@ -31,7 +31,7 @@ if ($daycount>=0 && $daycount<$interval) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php echo $data['info']['short-title'];?></title>
+    <title><?php echo $data['info']['short_title'];?></title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -194,7 +194,7 @@ if ($daycount>=0 && $daycount<$interval) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><?php echo $data['info']['short-title'];?></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><?php echo $data['info']['short_title'];?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
