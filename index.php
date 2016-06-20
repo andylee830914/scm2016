@@ -760,7 +760,7 @@ if ($daycount>=0 && $daycount<$interval) {
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2><?php echo $value['title'];?></h2>
+                            <h3><?php echo $value['title'];?></h3>
                             <h4 class="item-intro text-muted"><?php echo $value['speaker'];?></h4>
                             <?php
                                 $abstract = explode("\n", $value['abstract']);
