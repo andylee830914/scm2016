@@ -1,6 +1,6 @@
 import csv
 keyword={"開幕","茶點","台南小吃","報到","討論時間","午餐","大東夜市","晚宴"}
-f=open('schedule.csv',"r")
+f=open('schedule1.csv',"r")
 reader = csv.reader(f)
 i=0;
 for j in range(4):

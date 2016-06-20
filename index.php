@@ -329,7 +329,32 @@ if ($daycount>=0 && $daycount<$interval) {
                     <?php if ($i==ceil($total/2)) {
                         $i=0;
                     ?>
-                    </div>
+                </div>
+                    <?php }?>
+                <?php }?>
+                </div>
+
+                <?php $total=count($data['tw_speaker']);?>
+                <?php $i=0;?>
+                <?php foreach ($data['tw_speaker'] as $key => $value) {?>
+                <?php if ($i==0) {?>
+                <div class="col-md-3 speaker">
+                <?php }?>
+                    <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt><?php echo $value['cname'];?></dt>
+                                <dd><?php echo $value['affiliation'];?></dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                    <?php $i++;?>
+                    <?php if ($i==ceil($total/2)) {
+                        $i=0;
+                    ?>
+                </div>
                     <?php }?>
                 <?php }?>
 
@@ -570,7 +595,7 @@ if ($daycount>=0 && $daycount<$interval) {
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <a href="http://web.ncku.edu.tw/bin/home.php">
+                    <a target="_blank" href="http://web.ncku.edu.tw/bin/home.php">
                         <img src="img/logos/ncku.png" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
@@ -692,9 +717,9 @@ if ($daycount>=0 && $daycount<$interval) {
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; 國立成功大學數學系 2016</span>
+                    <span class="copyright">Copyright &copy; <a target="_blank" href="http://www.math.ncku.edu.tw">國立成功大學數學系</a> 2016</span>
                 </div>
-                <div class="col-md-4">
+                <!--<div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -703,15 +728,15 @@ if ($daycount>=0 && $daycount<$interval) {
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-4">
+                </div>-->
+                <!--<div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </div>
     </footer>
