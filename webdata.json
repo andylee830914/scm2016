@@ -2,6 +2,7 @@
     "info":{
         "title":"第四屆<br>海峽兩岸計算數學研討會",
         "short_title":"2016 海峽兩岸計算數學研討會",
+        "en_title":"The 4th Cross-straits Workshop on Computational Mathematics",
         "begin_date":"2016-07-25",
         "end_date":"2016-07-28",
         "place":"國立成功大學"
@@ -11,54 +12,62 @@
     ],
     "schedule":[
         [
-            {"time":"9:30-10:00","content":"開幕","place":"3173","talkid":0},
             {"time":"10:00-11:00","content":"張平文","place":"3173","talkid":"t1"},
             {"time":"11:00-11:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"11:30-12:30","content":"許文翰","place":"3173","talkid":"t2"},
+            {"time":"11:30-12:00","content":"楊肅煜","place":"3173","talkid":"t2"},
+            {"time":"12:00-12:30","content":"陳金如","place":"3173","talkid":"t3"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-14:30","content":"陳金如","place":"3173","talkid":"t3"},
-            {"time":"14:30-15:00","content":"許學軍","place":"3173","talkid":"t4"},
+            {"time":"14:00-15:00","content":"許文翰","place":"3173","talkid":"t4"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:00-15:30","content":"楊肅煜","place":"3173","talkid":"t5"},
-            {"time":"15:30-16:00","content":"謝小平","place":"3173","talkid":"t6"},
-            {"time":"16:00-16:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"16:30-17:10","content":"吳金典","place":"3173","talkid":"t7"},
-            {"time":"17:10-18:00","content":"討論時間","place":"3173","talkid":0}
+            {"time":"15:30-16:00","content":"魏益民","place":"3173","talkid":"t5"},
+            {"time":"16:00-16:30","content":"TBD","place":"3173","talkid":0},
+            {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
+            {"time":"17:00-17:30","content":"謝小平","place":"3173","talkid":"t6"},
+            {"time":"17:30-18:00","content":"吳金典","place":"3173","talkid":"t7"},
+            {"time":"18:00-20:00","content":"台南小吃","place":"3173","talkid":0}
         ],
         [
-            {"time":"9:30-10:00","content":"報到","place":"3173","talkid":0},
             {"time":"10:00-11:00","content":"林文偉","place":"3173","talkid":"t8"},
             {"time":"11:00-11:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"11:30-12:30","content":"許傳炬","place":"3173","talkid":"t9"},
+            {"time":"11:30-12:00","content":"黃聰明","place":"3173","talkid":"t9"},
+            {"time":"12:00-12:30","content":"武海軍","place":"3173","talkid":"t10"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-14:30","content":"武海軍","place":"3173","talkid":"t10"},
-            {"time":"14:30-15:00","content":"魏益民","place":"3173","talkid":"t11"},
+            {"time":"14:00-15:00","content":"許傳炬","place":"3173","talkid":"t11"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:00-15:30","content":"黃聰明","place":"3173","talkid":"t12"},
-            {"time":"15:30-16:00","content":"徐立偉","place":"3173","talkid":"t13"},
-            {"time":"16:00-16:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"16:30-17:10","content":"林敏雄","place":"3173","talkid":"t14"},
-            {"time":"17:10-18:00","content":"討論時間","place":"3173","talkid":0}
+            {"time":"15:30-16:00","content":"陳艷萍","place":"3173","talkid":"t12"},
+            {"time":"16:00-16:30","content":"TBD","place":"3173","talkid":0},
+            {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
+            {"time":"17:00-17:30","content":"徐立偉","place":"3173","talkid":"t13"},
+            {"time":"17:30-18:00","content":"林敏雄","place":"3173","talkid":"t14"},
+            {"time":"18:00-20:00","content":"大東夜市","place":"3173","talkid":0}
         ],
         [
-            {"time":"9:30-10:00","content":"報到","place":"3173","talkid":0},
             {"time":"10:00-11:00","content":"沈捷","place":"3173","talkid":"t15"},
             {"time":"11:00-11:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"11:30-12:30","content":"陳正宗","place":"3173","talkid":"t16"},
+            {"time":"11:30-12:00","content":"黃杰森","place":"3173","talkid":"t16"},
+            {"time":"12:00-12:30","content":"林平","place":"3173","talkid":"t17"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-14:30","content":"林平","place":"3173","talkid":"t17"},
-            {"time":"14:30-15:00","content":"陳艷萍","place":"3173","talkid":"t18"},
+            {"time":"14:00-15:00","content":"陳正宗","place":"3173","talkid":"t18"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:00-15:30","content":"黃杰森","place":"3173","talkid":"t19"},
-            {"time":"15:30-16:00","content":"楊志堅","place":"3173","talkid":"t20"},
-            {"time":"16:00-16:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"16:30-17:10","content":"鄧君豪","place":"3173","talkid":"t21"},
-            {"time":"17:10-18:00","content":"討論時間","place":"3173","talkid":0}
+            {"time":"15:30-16:00","content":"楊志堅","place":"3173","talkid":"t19"},
+            {"time":"16:00-16:30","content":"TBD","place":"3173","talkid":0},
+            {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
+            {"time":"17:00-17:30","content":"許學軍","place":"3173","talkid":"t20"},
+            {"time":"17:30-18:00","content":"鄧君豪","place":"3173","talkid":"t21"},
+            {"time":"18:00-20:00","content":"晚宴","place":"3173","talkid":0}
         ],
         [
-            {"time":"9:30-12:30","content":"參訪國立成功大學 ","place":"3173","talkid":0},
+            {"time":"10:00-11:00","content":"討論時間","place":"3173","talkid":0},
+            {"time":"11:00-11:30","content":"討論時間","place":"3173","talkid":0},
+            {"time":"11:30-12:00","content":"討論時間","place":"3173","talkid":0},
+            {"time":"12:00-12:30","content":"討論時間","place":"3173","talkid":0},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-18:00","content":"參訪台南市區與城市建設 ","place":"3173","talkid":0}
+            {"time":"14:00-15:00","content":"討論時間","place":"3173","talkid":0},
+            {"time":"15:00-15:30","content":"討論時間","place":"3173","talkid":0},
+            {"time":"15:30-16:00","content":"討論時間","place":"3173","talkid":0},
+            {"time":"16:00-16:30","content":"討論時間","place":"3173","talkid":0},
+            {"time":"16:30-17:00","content":"討論時間","place":"3173","talkid":0},
+            {"time":"17:00-17:30","content":"討論時間","place":"3173","talkid":0}
         ]
     ],
     "cn_speaker":[
@@ -105,22 +114,22 @@
             "speaker":"張平文",
             "abstract":""
         },
-        "t2":{
+        "t4":{
             "title":"Long-time Camassa-Holm solution behavior and its computational details",
             "speaker":"許文翰",
             "abstract":""
         },
-        "t9":{
+        "t11":{
             "title":"High order methodes for fractional diffusion equations",
             "speaker":"許傳炬",
             "abstract":""
         },
-        "t11":{
+        "t5":{
             "title":"Statistical Condition Estimates and Randomized Algorithms for Large-Scale Total Least Squares Problems",
             "speaker":"魏益民",
             "abstract":""
         },
-        "t16":{
+        "t18":{
             "title":"Revisit of Fredholm alternative theorem by using SVD and bordered matrix",
             "speaker":"陳正宗",
             "abstract":""
