@@ -54,6 +54,16 @@ if ($daycount>=0 && $daycount<$interval) {
         text-align: justify;
         text-indent : 2em ;
     }
+    .en-heading{
+        font-size:25px;
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    }
+
+    ul{
+        font-size:16px;
+    }
     .form-group{
         color: white;
         font-size: 20px;
@@ -138,6 +148,15 @@ if ($daycount>=0 && $daycount<$interval) {
 
     li.my-social-buttons  a:hover, li.my-social-buttons a:focus, li.my-social-buttons a:active {
         background-color: #fed136
+    }
+
+    aside h3.section-subheading {
+        font-size: 16px;
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: none;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 75px
     }
 </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -235,7 +254,9 @@ if ($daycount>=0 && $daycount<$interval) {
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading"><?php echo $data['info']['title'];?></div>
+                <div class="intro-heading"><?php echo $data['info']['title'];?>
+                    <div class="en-heading"><?php echo $data['info']['en_title'];?></div>
+                </div>
                 <div class="intro-lead-in"><?php echo $timeplace;?></div>
                 <a href="#contact" class="page-scroll btn btn-xl">立即報名</a>
             </div>
@@ -442,14 +463,20 @@ if ($daycount>=0 && $daycount<$interval) {
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="abstract">兩岸數學界的交流從上個世紀末就開始。因語言文化上並無障礙，雙方較容易進行深入之研討，開啟共同的研究合作計畫。而且大陸離台灣近，兩邊學者也有較高意願參加對方的會議。</p>
-                    <p class="abstract">最早是淡江大學和北京大學輪辦的「海峽兩岸數學研討會」。1995年在淡江大學舉辦第一屆，1998年在北京大學辦第二屆，2000年又回淡江大學，…，2007年淡江辦完後，2009在北大，去年再回淡江。</p>
-                    <p class="abstract">接著是「海峽兩岸統計及概率研討會」，由高雄中山大學在1996年創辦第一屆，第二屆於1999年在蘇州大學舉行，之後改成每兩年辦一次，2010年在成功大學舉辦第七屆會議。</p>
-                    <p class="abstract">另外「海峽兩岸圖論與組合學研討會」於2001年在昆明辦第一屆，2002年在中央研究院開第二屆，2005年第三屆在金華浙江師範大學，2007年第四屆在台灣大學，2009年由天津南開大學辦第五屆會議，去年則由交通大學主辦第六屆。</p>
-                    <p class="abstract">計算數學方面，1996年中國計算學會理事長石鐘慈院士來中山大學訪問，並參加中興大學在蕙蓀林場主辦的國內計算數學會議，會中石院士提出是否輪辦「兩岸計算數學研討會」的議題，但因有人反對遂無疾而終。此一議題兩岸蹉跎了14年，很高興2010年廈門大學終於開辦了第一屆的會議，
-                        會中決議由中山大學主辦第二屆，在2016年，則由成功大學舉辦第四屆兩岸計算數學研討會。</p>
-                    <p class="abstract">此次大會齊聚台灣和大陸的計算專家於成功大學，增進雙方人員的瞭解，交換彼此的研究心得，提供大家相互交流切磋的機會，加強兩岸人員未來的合作與整合，開發可能合作的研究課題。期能刺激新的數學模型與數值方法，促進跨領域的合作研究，拓展出計算方法更廣泛的應用。</p>
+                    <p class="abstract">兩岸雖然有政治上的差異，但是學術上的交流卻是從未停過。由於我們擁有相同的語言文化，極容易合作且共同研究同一主題。而且近來在兩岸的開放之下，兩岸的學者也願意互訪參加對方的會議。以下就列舉兩岸在數學上合辦的學術研討會。
+</p>
+                    <p class="abstract">在計算數學方面，起源於中國計算學會理事長石鐘慈院士於1996年來中山大學訪問時。他參加中興大學在蕙蓀林場主辦的國內計算數學會議，並於會中提出是否輪辦「兩岸計算數學研討會」的議題。當時因有人反對遂無疾而終。而此一議題兩岸蹉跎了14年，在2010年很高興由廈門大學終於開辦了第一屆的會議。接著由中山大學在2012年主辦第二屆，以及湘潭大學在2014年主辦第三屆。今年由成功大學主辦。
+</p>
+                    <p class="abstract">這是兩岸計算數學界兩年一次的大會。會中齊聚台灣和大陸的計算專家。除了增進雙方人員的瞭解，交換彼此的研究心得，提供大家相互交流切磋的機會外，將加強兩岸人員未來的合作與整合。希望能夠開發可能合作的研究課題。並刺激新的數學模型與數值方法，促進跨領域的合作研究，拓展出計算數學更廣泛的應用。本次研討會將針對計算數學下列幾個重要領域的研究工作交流和討論：
+</p>
+                    <ul>
+                        <li>數值微分方程與數值動態系統</li>
+                        <li>數值線性代數與線性最佳化控制</li>
+                        <li>非線性問題之數值解</li>
+                        <li>計算流體力學</li>
 
+
+                    </ul>
                 </div>
                 <!--<div class="col-lg-12">
                     <ul class="timeline">
@@ -593,10 +620,31 @@ if ($daycount>=0 && $daycount<$interval) {
     <!-- Clients Aside -->
     <aside class="clients">
         <div class="container">
+            <!--<div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">贊助單位</h2>
+                    <h3 class="section-subheading text-muted">Sponsors</h3>
+                </div>
+            </div>-->
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-3 col-sm-6">
                     <a target="_blank" href="http://web.ncku.edu.tw/bin/home.php">
                         <img src="img/logos/ncku.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="http://proj1.sinica.edu.tw/~mrpcwww/">
+                        <img src="img/logos/mrpc.jpeg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="http://www.twsiam.org/index.php/zh-tw/">
+                        <img src="img/logos/twsiam_log.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="http://www.cts.nthu.edu.tw/main.php">
+                        <img src="img/logos/ncts2.png" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
             </div>
