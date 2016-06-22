@@ -149,14 +149,18 @@ if ($daycount>=0 && $daycount<$interval) {
     li.my-social-buttons  a:hover, li.my-social-buttons a:focus, li.my-social-buttons a:active {
         background-color: #fed136
     }
-
+    aside h2.section-heading {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 15px
+    }
     aside h3.section-subheading {
         font-size: 16px;
         font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-transform: none;
         font-style: italic;
         font-weight: 400;
-        margin-bottom: 75px
+        margin-bottom: 20px
     }
 </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -620,12 +624,12 @@ if ($daycount>=0 && $daycount<$interval) {
     <!-- Clients Aside -->
     <aside class="clients">
         <div class="container">
-            <!--<div class="row">
+            <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">贊助單位</h2>
                     <h3 class="section-subheading text-muted">Sponsors</h3>
                 </div>
-            </div>-->
+            </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a target="_blank" href="http://web.ncku.edu.tw/bin/home.php">
@@ -659,6 +663,11 @@ if ($daycount>=0 && $daycount<$interval) {
                     <h2 class="section-heading">報名</h2>
                     <h3 class="section-subheading text-muted">On-line Registration</h3>
                 </div>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <ul>
+                    <li>註冊費 1000元（含手冊，提袋，晚宴）</li>
+                </ul>
             </div>
             <div class="row">
                 <div class="col-lg-12">
