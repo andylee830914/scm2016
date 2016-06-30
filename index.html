@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>2016 海峽兩岸計算數學研討會</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <style>
+    .abstract{
+        font-size:16px;
+        text-align: justify;
+        text-indent : 2em ;
+    }
+    .en-heading{
+        font-size:25px;
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    }
+
+    ul{
+        font-size:16px;
+    }
+    .form-group{
+        color: white;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .speaker{
+        font-size: 16px;
+    }
+    .myphoto{
+        height: 150px;
+        clear:left;
+    }
+    .bg-dark-gray{
+        background-color:#f2f2f2
+    }
+    .mythumb{
+        display:inline-block;
+        position:relative;
+        width:160px;
+        height:160px;
+        text-align : center;
+        line-height : 160px;
+        overflow:hidden;
+    }
+    .mythumb img{
+        float: left;
+        line-height: 160px;
+        text-align: center;
+        width:auto;
+        height:100%;
+        vertical-align : middle;
+    }
+    #links {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media (max-width: 768px) {
+        .mythumb{
+            width:100px;
+            height: 100px;
+        }
+        .mythumb img{
+            line-height: 100px;
+        }
+        #links {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    li.my-social-buttons {
+        margin-bottom: 0 ;
+    }
+
+    li.my-social-buttons p{
+        line-height:40px;
+        height: 40px;
+        width: calc(100%-50px);
+        margin-left: 10px;
+        float:left;
+
+        font-size: 15px;
+    }
+
+
+    li.my-social-buttons a {
+        clear:left;
+        float:left;
+        display: block;
+        background-color: #222;
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+        outline: 0;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+
+    li.my-social-buttons  a:hover, li.my-social-buttons a:focus, li.my-social-buttons a:active {
+        background-color: #fed136
+    }
+    aside h2.section-heading {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 15px
+    }
+    aside h3.section-subheading {
+        font-size: 16px;
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: none;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 20px
+    }
+</style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">2016 海峽兩岸計算數學研討會</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#news">最新消息</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#speaker">邀請講員</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#schedule">大會議程</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">關於會議</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gallery">活動相簿</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">聯絡我們</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">報名</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">第四屆<br>海峽兩岸計算數學研討會                    <div class="en-heading">The 4th Cross-straits Workshop on Computational Mathematics</div>
+                </div>
+                <div class="intro-lead-in">2016/07/25~2016/07/28 @ 國立成功大學</div>
+                <a href="#contact" class="page-scroll btn btn-xl">立即報名</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">最新消息</h2>
+                    <h3 class="section-subheading text-muted">News</h3>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="media">
+                    <div class="media-left">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">2016-06-19</h4>
+                        更新研討會時間表                    </div>
+                </div>
+                                <!--<div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>-->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- talk  Section -->
+    <section id="speaker" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">邀請講員</h2>
+                    <h3 class="section-subheading text-muted">Invited Speakers</h3>
+                </div>
+            </div>
+            <div class="row">
+                                                                                <div class="col-md-3 speaker">
+                                    <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>沈捷 Jie Shen</dt>
+                                <dd>美國普渡大學</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>許傳炬 Chuanju Xu</dt>
+                                <dd>福建省廈門大學數學科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>林玉閩 </dt>
+                                <dd>福建省廈門大學數學科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>魏益民 Yimin Wei</dt>
+                                <dd>上海市復旦大學數學科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>張智民 Zhimin Zhang</dt>
+                                <dd>北京計算科學研究中心</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>陳艷萍 Yanping Chen</dt>
+                                <dd>廣東省華南師範大學數學科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>張平文 Pingwen Zhang</dt>
+                                <dd>北京市北京大學數學科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>謝小平 Xiaoping Xie</dt>
+                                <dd>四川省四川大學數學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>楊志堅 Zhijian Yang</dt>
+                                <dd>湖北省武漢大學數學與統計學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>謝資清 Ziqing Xie</dt>
+                                <dd>中國長沙湖南師範大學數學與計算機科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>張然 Ran Zhang</dt>
+                                <dd>吉林省吉林大學數學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                        </div>
+                                                                    <div class="col-md-3 speaker">
+                                    <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>武海軍 Haijun Wu</dt>
+                                <dd>江蘇省南京大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>陳金如 Jinru Chen</dt>
+                                <dd>江蘇省南京師範大學數學科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>許學軍 Xuejun Xu</dt>
+                                <dd>中科院數學與系統科學研究所</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>許躍生 Yuesheng Xu</dt>
+                                <dd>廣東省中山大學科學計算與計算機應用系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>包剛 Gang Bao</dt>
+                                <dd>浙江省浙江大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>吳勃英 Boying Wu</dt>
+                                <dd>黑龍江省哈爾濱工業大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>李明 Ming Li</dt>
+                                <dd>山西太原理工大學數學研究所</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>楊銀 Yin Yang</dt>
+                                <dd>湘潭大學數學與計算科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>舒適 </dt>
+                                <dd>湘潭大學數學與計算科學學院</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>林平 Ping Lin</dt>
+                                <dd>北京科技大學&Dundee University</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                        </div>
+
+                                                                                <div class="col-md-3 speaker">
+                                    <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>陳正宗</dt>
+                                <dd>國立臺灣海洋大學</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>許文翰</dt>
+                                <dd>國立台灣大學</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>薛克民</dt>
+                                <dd>國立台灣大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>王偉仲</dt>
+                                <dd>國立台灣大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>黃聰明</dt>
+                                <dd>國立台灣師範大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>楊肅煜</dt>
+                                <dd>國立中央大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>王偉成</dt>
+                                <dd>國立清華大學數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                        </div>
+                                                                    <div class="col-md-3 speaker">
+                                    <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>林文偉</dt>
+                                <dd>國立交通大學應用數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>賴明治</dt>
+                                <dd>國立交通大學應用數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>吳金典</dt>
+                                <dd>國立交通大學應用數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>鄧君豪</dt>
+                                <dd>國立中興大學應用數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>林敏雄</dt>
+                                <dd>國立中正大學應用數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                                                            <ul>
+
+                        <li>
+                            <dl class="list-unstyled" style="height:55px">
+                                <dt>黃杰森</dt>
+                                <dd>國立中山大學應用數學系</dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                                                        
+            </div>
+        </div>
+    </section>
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">大會議程</h2>
+                    <h3 class="section-subheading text-muted">Schedule</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                                <div class="col-md-3" id="schedule0">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Day 1</h4>
+                    <div class="list-group">
+                                                <a href="#portfolioModalt1" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">10:00-11:00</h4>
+                            <p class="list-group-item-text">張平文</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:00-11:30</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt2" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:30-12:00</h4>
+                            <p class="list-group-item-text">楊肅煜</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt3" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:00-12:30</h4>
+                            <p class="list-group-item-text">陳金如</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:30-14:00</h4>
+                            <p class="list-group-item-text">午餐</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt4" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">14:00-15:00</h4>
+                            <p class="list-group-item-text">許文翰</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:00-15:30</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt5" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:30-16:00</h4>
+                            <p class="list-group-item-text">魏益民</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:00-16:30</h4>
+                            <p class="list-group-item-text">TBD</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:30-17:00</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt6" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">17:00-17:30</h4>
+                            <p class="list-group-item-text">謝小平</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt7" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">17:30-18:00</h4>
+                            <p class="list-group-item-text">吳金典</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">18:00-20:00</h4>
+                            <p class="list-group-item-text">台南小吃</p>
+                        </a>
+
+                                                
+
+
+                    </div>
+                </div>
+                                <div class="col-md-3" id="schedule1">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Day 2</h4>
+                    <div class="list-group">
+                                                <a href="#portfolioModalt8" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">10:00-11:00</h4>
+                            <p class="list-group-item-text">林文偉</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:00-11:30</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt9" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:30-12:00</h4>
+                            <p class="list-group-item-text">黃聰明</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt10" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:00-12:30</h4>
+                            <p class="list-group-item-text">武海軍</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:30-14:00</h4>
+                            <p class="list-group-item-text">午餐</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt11" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">14:00-15:00</h4>
+                            <p class="list-group-item-text">許傳炬</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:00-15:30</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt12" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:30-16:00</h4>
+                            <p class="list-group-item-text">陳艷萍</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:00-16:30</h4>
+                            <p class="list-group-item-text">TBD</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:30-17:00</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt13" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">17:00-17:30</h4>
+                            <p class="list-group-item-text">徐立偉</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt14" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">17:30-18:00</h4>
+                            <p class="list-group-item-text">林敏雄</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">18:00-20:00</h4>
+                            <p class="list-group-item-text">大東夜市</p>
+                        </a>
+
+                                                
+
+
+                    </div>
+                </div>
+                                <div class="col-md-3" id="schedule2">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Day 3</h4>
+                    <div class="list-group">
+                                                <a href="#portfolioModalt15" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">10:00-11:00</h4>
+                            <p class="list-group-item-text">沈捷</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:00-11:30</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt16" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:30-12:00</h4>
+                            <p class="list-group-item-text">黃杰森</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt17" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:00-12:30</h4>
+                            <p class="list-group-item-text">林平</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:30-14:00</h4>
+                            <p class="list-group-item-text">午餐</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt18" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">14:00-15:00</h4>
+                            <p class="list-group-item-text">陳正宗</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:00-15:30</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt19" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:30-16:00</h4>
+                            <p class="list-group-item-text">楊志堅</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:00-16:30</h4>
+                            <p class="list-group-item-text">TBD</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:30-17:00</h4>
+                            <p class="list-group-item-text">茶點</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt20" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">17:00-17:30</h4>
+                            <p class="list-group-item-text">許學軍</p>
+                        </a>
+
+                                                                        <a href="#portfolioModalt21" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">17:30-18:00</h4>
+                            <p class="list-group-item-text">鄧君豪</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">18:00-20:00</h4>
+                            <p class="list-group-item-text">晚宴</p>
+                        </a>
+
+                                                
+
+
+                    </div>
+                </div>
+                                <div class="col-md-3" id="schedule3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Day 4</h4>
+                    <div class="list-group">
+                                                <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">10:00-11:00</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:00-11:30</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">11:30-12:00</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:00-12:30</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">12:30-14:00</h4>
+                            <p class="list-group-item-text">午餐</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">14:00-15:00</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:00-15:30</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">15:30-16:00</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:00-16:30</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">16:30-17:00</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                                        <a href="#portfolioModal0" class="portfolio-link list-group-item" data-toggle="modal">
+                            <h4 class="list-group-item-heading">17:00-17:30</h4>
+                            <p class="list-group-item-text">討論時間</p>
+                        </a>
+
+                                                
+
+
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- Abstract Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">會議摘要</h2>
+                    <h3 class="section-subheading text-muted">Meeting Abstracts</h3>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModalt1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-book fa-3x"></i>
+                            </div>
+                        </div>
+                        <img data-src="holder.js/100px260?theme=gray&text=Defects of Liquid Crystals \n  \n 張平文" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModalt4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-book fa-3x"></i>
+                            </div>
+                        </div>
+                        <img data-src="holder.js/100px260?theme=gray&text=Long-time Camassa-Holm solution behavior and its computational details \n  \n 許文翰" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModalt11" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-book fa-3x"></i>
+                            </div>
+                        </div>
+                        <img data-src="holder.js/100px260?theme=gray&text=High order methodes for fractional diffusion equations \n  \n 許傳炬" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModalt5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-book fa-3x"></i>
+                            </div>
+                        </div>
+                        <img data-src="holder.js/100px260?theme=gray&text=Statistical Condition Estimates and Randomized Algorithms for Large-Scale Total Least Squares Problems \n  \n 魏益民" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModalt18" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-book fa-3x"></i>
+                            </div>
+                        </div>
+                        <img data-src="holder.js/100px260?theme=gray&text=Revisit of Fredholm alternative theorem by using SVD and bordered matrix \n  \n 陳正宗" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-4 portfolio-item">
+                    <a href="#portfolioModalt21" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-book fa-3x"></i>
+                            </div>
+                        </div>
+                        <img data-src="holder.js/100px260?theme=gray&text=Boundary error and order reduction of Runge-Kutta-Nyström method for wave equation \n  \n 鄧君豪" class="img-responsive" alt="">
+                    </a>
+                </div>
+                            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">關於會議</h2>
+                    <h3 class="section-subheading text-muted">About</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="abstract">兩岸雖然有政治上的差異，但是學術上的交流卻是從未停過。由於我們擁有相同的語言文化，極容易合作且共同研究同一主題。而且近來在兩岸的開放之下，兩岸的學者也願意互訪參加對方的會議。以下就列舉兩岸在數學上合辦的學術研討會。
+</p>
+                    <p class="abstract">在計算數學方面，起源於中國計算學會理事長石鐘慈院士於1996年來中山大學訪問時。他參加中興大學在蕙蓀林場主辦的國內計算數學會議，並於會中提出是否輪辦「兩岸計算數學研討會」的議題。當時因有人反對遂無疾而終。而此一議題兩岸蹉跎了14年，在2010年很高興由廈門大學終於開辦了第一屆的會議。接著由中山大學在2012年主辦第二屆，以及湘潭大學在2014年主辦第三屆。今年由成功大學主辦。
+</p>
+                    <p class="abstract">這是兩岸計算數學界兩年一次的大會。會中齊聚台灣和大陸的計算專家。除了增進雙方人員的瞭解，交換彼此的研究心得，提供大家相互交流切磋的機會外，將加強兩岸人員未來的合作與整合。希望能夠開發可能合作的研究課題。並刺激新的數學模型與數值方法，促進跨領域的合作研究，拓展出計算數學更廣泛的應用。本次研討會將針對計算數學下列幾個重要領域的研究工作交流和討論：
+</p>
+                    <ul>
+                        <li>數值微分方程與數值動態系統</li>
+                        <li>數值線性代數與線性最佳化控制</li>
+                        <li>非線性問題之數值解</li>
+                        <li>計算流體力學</li>
+
+
+                    </ul>
+                </div>
+                <!--<div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+<!-- temp remove gallery
+    <section id="gallery"  class="bg-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">活動相簿</h2>
+                    <h3 class="section-subheading text-muted">Gallery</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="links">
+                                </div>
+            </div>
+
+        </div>
+
+    </section>
+-->
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">聯絡我們</h2>
+                    <h3 class="section-subheading text-muted">Contact us</h3>
+                </div>
+            </div>
+            <div class="row">
+                                <div class="col-sm-3">
+                    <div class="team-member">
+                                                                            <img src="././img/team/cswang01.jpg " class="img-responsive img-circle myphoto" alt="">
+                                                <h4>王辰樹 副教授</h4>
+                        <p class="text-muted">國立成功大學數學系</p>
+                        <div class="team-member">
+                            <ul class="list-unstyled">
+                                <li class="my-social-buttons"><a href="tel:+88662757575,65143"><i class="fa fa-phone"></i></a><p>06-2757575 轉 65143</p></li>
+                                <li class="my-social-buttons"><a href="mailto:chenshu@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>chenshu@mail.ncku.edu.tw</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-sm-3">
+                    <div class="team-member">
+                                                                            <img src="././img/team/ycshu3.jpg " class="img-responsive img-circle myphoto" alt="">
+                                                <h4>舒宇宸 副教授</h4>
+                        <p class="text-muted">國立成功大學數學系</p>
+                        <div class="team-member">
+                            <ul class="list-unstyled">
+                                <li class="my-social-buttons"><a href="tel:+88662757575,65147"><i class="fa fa-phone"></i></a><p>06-2757575 轉 65147</p></li>
+                                <li class="my-social-buttons"><a href="mailto:ycshu@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>ycshu@mail.ncku.edu.tw</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-sm-3">
+                    <div class="team-member">
+                                                                            <img src="././img/team/L18021010.jpg " class="img-responsive img-circle myphoto" alt="">
+                                                <h4>廖士綱 先生</h4>
+                        <p class="text-muted">國立成功大學數學系</p>
+                        <div class="team-member">
+                            <ul class="list-unstyled">
+                                <li class="my-social-buttons"><a href="tel:+88662757575,65156"><i class="fa fa-phone"></i></a><p>06-2757575 轉 65156 轉 415</p></li>
+                                <li class="my-social-buttons"><a href="mailto:L18021010@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>L18021010@mail.ncku.edu.tw</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-sm-3">
+                    <div class="team-member">
+                                                                            <img src="././img/team/L16021137.jpg " class="img-responsive img-circle myphoto" alt="">
+                                                <h4>梁一心 小姐</h4>
+                        <p class="text-muted">國立成功大學數學系</p>
+                        <div class="team-member">
+                            <ul class="list-unstyled">
+                                <li class="my-social-buttons"><a href="tel:+88662757575,65156"><i class="fa fa-phone"></i></a><p>06-2757575 轉 65156 轉 414</p></li>
+                                <li class="my-social-buttons"><a href="mailto:L16021137@mail.ncku.edu.tw"><i class="fa fa-envelope"></i></a><p>L16021137@mail.ncku.edu.tw</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">贊助單位</h2>
+                    <h3 class="section-subheading text-muted">Sponsors</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="http://web.ncku.edu.tw/bin/home.php">
+                        <img src="img/logos/ncku.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="http://proj1.sinica.edu.tw/~mrpcwww/">
+                        <img src="img/logos/mrpc.jpeg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="http://www.twsiam.org/index.php/zh-tw/">
+                        <img src="img/logos/twsiam_log.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a target="_blank" href="http://www.cts.nthu.edu.tw/main.php">
+                        <img src="img/logos/ncts2.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">報名</h2>
+                    <h3 class="section-subheading text-muted">On-line Registration</h3>
+                </div>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <ul>
+                    <li>註冊費 1000元（含手冊，提袋，晚宴）</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="col-lg-12 text-center">
+                                    <h4 class="section-heading">基本資料</h4>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" required data-validation-required-message="Please select your title." id="title" name="title">
+                                        <option disabled>職稱 Title</option>
+                                        <option>Prof.</option>
+                                        <option>Dr.</option>
+                                        <option>Mr.</option>
+                                        <option>Mrs.</option>
+                                        <option>Student</option>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="姓名 (Last name, First name) *" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="服務單位 (Affiliation) *" id="affiliation" name="affiliation" required data-validation-required-message="Please enter your affiliation.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="電子郵件 (Email) *" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="電話 (Primary Phone/ Mobile Phone) *" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-lg-12 text-center">
+                                    <h4 class="section-heading">用餐調查</h4>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="meal" class="col-sm-4 control-label">葷素</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meal" id="inlineRadio1" value="nonvege" required> 葷
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meal" id="inlineRadio2" value="vegetarian" required> 素
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="meald1" class="col-sm-4 control-label">7/25 午餐</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald1" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald1" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="meald2" class="col-sm-4 control-label">7/26 午餐</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald2" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald2" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="meald3" class="col-sm-4 control-label">7/27 午餐</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald3" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="meald3" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">確定報名</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; <a target="_blank" href="http://www.math.ncku.edu.tw">國立成功大學數學系</a> 2016</span>
+                </div>
+                <!--<div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>-->
+                <!--<div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    
+    <div class="portfolio-modal modal fade" id="portfolioModalt1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Defects of Liquid Crystals</h3>
+                            <h4 class="item-intro text-muted">張平文</h4>
+                                                        <p class="abstract"></p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Abstract</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="portfolioModalt4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Long-time Camassa-Holm solution behavior and its computational details</h3>
+                            <h4 class="item-intro text-muted">許文翰</h4>
+                                                        <p class="abstract"></p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Abstract</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="portfolioModalt11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>High order methodes for fractional diffusion equations</h3>
+                            <h4 class="item-intro text-muted">許傳炬</h4>
+                                                        <p class="abstract"></p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Abstract</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="portfolioModalt5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Statistical Condition Estimates and Randomized Algorithms for Large-Scale Total Least Squares Problems</h3>
+                            <h4 class="item-intro text-muted">魏益民</h4>
+                                                        <p class="abstract"></p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Abstract</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="portfolioModalt18" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Revisit of Fredholm alternative theorem by using SVD and bordered matrix</h3>
+                            <h4 class="item-intro text-muted">陳正宗</h4>
+                                                        <p class="abstract"></p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Abstract</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="portfolioModalt21" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Boundary error and order reduction of Runge-Kutta-Nyström method for wave equation</h3>
+                            <h4 class="item-intro text-muted">鄧君豪</h4>
+                                                        <p class="abstract"></p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Abstract</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/timetable.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+    <script src="js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+
+    <script>
+    $('#image-gallery-button').on('click', function (event) {
+        event.preventDefault()
+        blueimp.Gallery($('#links a'), $('#blueimp-gallery').data())
+    })
+    </script>
+
+</body>
+
+</html>
