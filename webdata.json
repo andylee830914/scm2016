@@ -17,7 +17,7 @@
             {"time":"11:30-12:00","content":"楊肅煜","place":"3173","talkid":"t2"},
             {"time":"12:00-12:30","content":"陳金如","place":"3173","talkid":"t3"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-15:00","content":"許文翰","place":"3173","talkid":"t4"},
+            {"time":"14:00-15:00","content":"陳正宗","place":"3173","talkid":"t4"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
             {"time":"15:30-16:00","content":"魏益民","place":"3173","talkid":"t5"},
             {"time":"16:00-16:30","content":"TBD","place":"3173","talkid":0},
@@ -34,7 +34,7 @@
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
             {"time":"14:00-15:00","content":"許傳炬","place":"3173","talkid":"t11"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:30-16:00","content":"TBD","place":"3173","talkid":"t12"},
+            {"time":"15:30-16:00","content":"陳艷萍","place":"3173","talkid":"t12"},
             {"time":"16:00-16:30","content":"TBD","place":"3173","talkid":0},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
             {"time":"17:00-17:30","content":"徐立偉","place":"3173","talkid":"t13"},
@@ -47,7 +47,7 @@
             {"time":"11:30-12:00","content":"黃杰森","place":"3173","talkid":"t16"},
             {"time":"12:00-12:30","content":"林平","place":"3173","talkid":"t17"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-15:00","content":"陳正宗","place":"3173","talkid":"t18"},
+            {"time":"14:00-15:00","content":"許文翰","place":"3173","talkid":"t18"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
             {"time":"15:30-16:00","content":"楊志堅","place":"3173","talkid":"t19"},
             {"time":"16:00-16:30","content":"TBD","place":"3173","talkid":0},
@@ -76,6 +76,7 @@
         {"cname":"林玉閩","ename":"","affiliation":"福建省廈門大學數學科學學院"},
         {"cname":"魏益民","ename":"Yimin Wei","affiliation":"上海市復旦大學數學科學學院"},
         {"cname":"張智民","ename":"Zhimin Zhang","affiliation":"北京計算科學研究中心"},
+        {"cname":"陳艷萍","ename":"Yanping Chen","affiliation":"廣東省華南師範大學數學科學學院"},
         {"cname":"張平文","ename":"Pingwen Zhang","affiliation":"北京市北京大學數學科學學院"},
         {"cname":"謝小平","ename":"Xiaoping Xie","affiliation":"四川省四川大學數學學院"},
         {"cname":"楊志堅","ename":"Zhijian Yang","affiliation":"湖北省武漢大學數學與統計學院"},
@@ -103,7 +104,7 @@
         {"cname":"賴明治","affiliation":"國立交通大學應用數學系"},
         {"cname":"吳金典","affiliation":"國立交通大學應用數學系"},
         {"cname":"鄧君豪","affiliation":"國立中興大學應用數學系"},
-        {"cname":"林敏雄","affiliation":"國立中正大學應用數學系"},
+        {"cname":"林敏雄","affiliation":"國立中正大學數學系"},
         {"cname":"黃杰森","affiliation":"國立中山大學應用數學系"}
     ],
     "talk":{
@@ -112,7 +113,7 @@
             "speaker":"張平文",
             "abstract":""
         },
-        "t4":{
+        "t18":{
             "title":"Long-time Camassa-Holm solution behavior and its computational details",
             "speaker":"許文翰",
             "abstract":""
@@ -127,7 +128,7 @@
             "speaker":"魏益民",
             "abstract":""
         },
-        "t18":{
+        "t4":{
             "title":"Revisit of Fredholm alternative theorem by using SVD and bordered matrix",
             "speaker":"陳正宗",
             "abstract":""
