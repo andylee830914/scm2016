@@ -239,6 +239,9 @@ if ($daycount>=0 && $daycount<$interval) {
                         <a class="page-scroll" href="#about">關於會議</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#transport">交通方式</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#gallery">活動相簿</a>
                     </li>
                     <li>
@@ -357,7 +360,6 @@ if ($daycount>=0 && $daycount<$interval) {
                 </div>
                     <?php }?>
                 <?php }?>
-                </div>
 
                 <?php $total=count($data['tw_speaker']);?>
                 <?php $i=0;?>
@@ -553,8 +555,22 @@ if ($daycount>=0 && $daycount<$interval) {
         </div>
     </section>
 
-<!-- temp remove gallery
-    <section id="gallery"  class="bg-dark-gray">
+    <section id="transport"  class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">交通方式</h2>
+                    <h3 class="section-subheading text-muted">Transportation</h3>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="gallery" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -579,7 +595,9 @@ if ($daycount>=0 && $daycount<$interval) {
         </div>
 
     </section>
--->
+
+
+
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
