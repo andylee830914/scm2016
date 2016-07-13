@@ -12,46 +12,44 @@
     ],
     "schedule":[
         [
-            {"time":"10:00-11:00","content":"張平文","place":"3173","talkid":"t1"},
-            {"time":"11:00-11:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"11:30-12:00","content":"楊肅煜","place":"3173","talkid":"t2"},
-            {"time":"12:00-12:30","content":"林平","place":"3173","talkid":"t3"},
+            {"time":"10:00-11:00","content":"報到","place":"3173","talkid":0},
+            {"time":"11:00-11:30","content":"開幕","place":"3173","talkid":0},
+            {"time":"11:30-12:30","content":"張平文","place":"3173","talkid":"t1"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-15:00","content":"陳正宗","place":"3173","talkid":"t4"},
+            {"time":"14:00-15:00","content":"陳正宗","place":"3173","talkid":"t2"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:30-16:00","content":"許學軍","place":"3173","talkid":"t5"},
-            {"time":"16:00-16:30","content":"吳金典","place":"3173","talkid":0},
+            {"time":"15:30-16:00","content":"林敏雄","place":"3173","talkid":"t3"},
+            {"time":"16:00-16:30","content":"謝小平","place":"3173","talkid":"t4"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
-            {"time":"17:00-18:00","content":"黃聰明","place":"3173","talkid":"t6"},
+            {"time":"17:00-17:30","content":"徐立偉","place":"3173","talkid":"t5"},
+            {"time":"17:30-18:30","content":"吳金典","place":"3173","talkid":"t6"},
             {"time":"18:00-20:00","content":"台南小吃","place":"3173","talkid":0}
         ],
         [
             {"time":"10:00-11:00","content":"王偉仲","place":"3173","talkid":"t8"},
             {"time":"11:00-11:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"11:30-12:00","content":"林敏雄","place":"3173","talkid":"t9"},
-            {"time":"12:00-12:30","content":"謝小平","place":"3173","talkid":"t10"},
+            {"time":"11:30-12:30","content":"黃聰明","place":"3173","talkid":"t9"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-15:00","content":"許傳炬","place":"3173","talkid":"t11"},
+            {"time":"14:00-15:00","content":"許傳炬","place":"3173","talkid":"t10"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:30-16:00","content":"鄧君豪","place":"3173","talkid":"t12"},
-            {"time":"16:00-16:30","content":"陳旻宏","place":"3173","talkid":0},
+            {"time":"15:30-16:00","content":"林平","place":"3173","talkid":"t11"},
+            {"time":"16:00-16:30","content":"陳旻宏","place":"3173","talkid":"t12"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
-            {"time":"17:00-18:30","content":"魏益民","place":"3173","talkid":"t13"},
+            {"time":"17:00-18:00","content":"魏益民","place":"3173","talkid":"t13"},
             {"time":"18:00-20:00","content":"大東夜市","place":"3173","talkid":0}
         ],
         [
             {"time":"10:00-11:00","content":"沈捷","place":"3173","talkid":"t15"},
             {"time":"11:00-11:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"11:30-12:00","content":"黃杰森","place":"3173","talkid":"t16"},
-            {"time":"12:00-12:30","content":"武海軍","place":"3173","talkid":"t17"},
+            {"time":"11:30-12:30","content":"楊肅煜","place":"3173","talkid":"t16"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-15:00","content":"許文翰","place":"3173","talkid":"t18"},
+            {"time":"14:00-15:00","content":"許文翰","place":"3173","talkid":"t17"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:30-16:00","content":"徐立偉","place":"3173","talkid":"t19"},
-            {"time":"16:00-16:30","content":"TBD","place":"3173","talkid":0},
+            {"time":"15:30-16:00","content":"鄧君豪","place":"3173","talkid":"t18"},
+            {"time":"16:00-16:30","content":"李勇達","place":"3173","talkid":"t19"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
-            {"time":"17:00-17:30","content":"TBD","place":"3173","talkid":"t20"},
-            {"time":"17:30-18:00","content":"TBD","place":"3173","talkid":"t21"},
+            {"time":"17:00-17:30","content":"武海軍","place":"3173","talkid":"t20"},
+            {"time":"17:30-18:00","content":"黃杰森","place":"3173","talkid":"t21"},
             {"time":"18:00-20:00","content":"晚宴","place":"3173","talkid":0}
         ],
         [
@@ -104,40 +102,31 @@
             "abstract":"複雜流體由大分子或者各向異性的小分子構成，是具有結構的粘彈性流體，具有非常複雜的流動現象，在化學化工、材料、環境、生物等領域有廣泛應用。複雜流體的介尺度結構和動力學機理還不清楚，現有的宏觀模型大部分還是經驗性的，缺乏物理和數學的美感；能夠正確描述複雜流體結構和動力學的底層模型由於維數太高或者非線性太強，導致計算量太大，而且缺乏理論分析方法，從而不能有效地應用到實際的工程問題。構建機理清楚具有美感的數學模型、開展理論分析研究，發展高效高精度算法和模擬技術，探索複雜流體的特性和表象，成為複雜流體驅動應用數學發展的重要推動力。"
         },
         "t2":{
-            "title":"A simple direct-forcing immersed boundary projection method with prediction-correction for fluid-solid interaction problems",
-            "speaker":"楊肅煜",
-            "abstract":"In this talk, we will introduce a simple and novel prediction-correction approach in conjunction with a direct-forcing immersed boundary projection method for simulating the dynamics of fluid-solid interaction problems, where the immersed solid object can be stationary or moving in the fluid with a prescribed velocity. The main idea of this approach is based on the introduction of a virtual force of discrete type, which is distributed on the whole solid body and appended to the fluid momentum equations to accommodate the no-slip boundary condition at the immersed solid boundary. More specifically, based on the rate of moment changes of the solid body, we first predict the virtual force at the grid points by using the difference between the prescribed solid velocities and the computed velocities which are obtained by applying the projection method to solve the incompressible Navier-Stokes equations on the whole domain in the absence of immersed solid object. This predicted virtual force is then added to the fluid momentum equations as an additional forcing term and again, we employ the projection method to correct the velocity field, pressure and virtual force. Such prediction-correction procedure can be iterated to generate a more general method, if necessary. Numerical experiments of several benchmark problems are performed to illustrate the simplicity and high performance of the prediction-correction approach. We find that our numerical results are in very good agreement with the previous works in the literature and in most cases, one correction step is good enough. This is joint work with Tzyy-Leng Horng, Po-Wen Hsieh and Cheng-Shu You."
-        },
-        "t3":{
-            "title":"Energy Law Preserving Continuous Finite Element Methods for A Phase Field Model With Variable Densities",
-            "speaker":"林平",
-            "abstract":"We will consider a phase-field model for multiphase fluids with variable densities. A Quasi-Incompressible Navier-Stokes Cahn-Hilliard System for the model will be investigated. Under a minor reformulation of the system we show that there is a continuous energy law underlying the system, assuming that all variables have reasonable regularities. For the reformulated system we then design a continuous finite element method and a special temporal scheme where the energy law is preserved at the discrete level. Such a discrete energy law (almost the same as the continuous energy law) for a variable density two-phase flow model has not been established before with a continuous finite element. Some numerical results will be presented to demonstrate the capabilities of our numerical schemes. We will also show how to develop an energy law preserving continuous finite element method for a moving contact line problem."
-        },
-        "t4":{
             "title":"Dual BEM development in Taiwan- my personal point of view",
             "speaker":"陳正宗",
             "abstract":"In this talk, four parts will be given. First, the history of Taiwan BEM development is addressed. Second, the Dual BEM developed in Taiwan by NTOU/MSV group and the natural BEM in Mainland China by Prof. Feng and Yu are introduced. Third, not only academic research but also real engineering practice on the dual BEM will be shown. Engineering applications including sheetpile seepage, comb drive of MEMS, thin breakwater, thin airfoil, screen acoustics, stress reliever of solid rocket motor, crack and fatigue crack growth, will be introduced. Finally, I will mention recent works of NTOU/MSV group on near trap modes, rank deficiency problem in BEM and the Clifford valued BEM."
         },
-        "t6":{
+        "t4":{
+            "title":"A divergence-free weak Galerkin method forquasi-Newtonian Stokes flows",
+            "speaker":"謝小平",
+            "abstract":"A weak Galerkin finite element method is proposed to solve incompressible quasi-Newtonian Stokes equations. We use piecewise polynomials of degrees k+1 (k ≥ 0) and  for the velocity and pressure in the interior of elements, respectively, and piecewise polynomials of degrees k and k+1 for the numerical traces of the velocity and pressure, respectively. Well-posedness of the discrete scheme is established. The method yields a globally divergence-free velocity approximation. Optimal a priori error estimates for the velocity gradient and pressure approximations are derived. Numerical results are provided to confirm the theoretical results. This is a joint work with Gang Chen and Xiaobo Zheng"
+        },
+        "t9":{
             "title":"Computing Eigenmodes of Elliptic Operators Using Increasingly Flat Radial Basis Functions",
             "speaker":"黃聰明",
             "abstract":"Solving multi-dimensional eigenmodes problem for elliptic operator using radial basis functions (RBFs) was proposed by Platte and Driscoll. They convert the eigenmodes problem to an eigenpairs problem of a finite dimensional matrix. We formulate an approach based on using finite order interpolating polynomials as eigenfunctions for eigenmodes problem. We prove, under some simple conditions on the RBFs, two approaches converge when increasingly flat BRFs are being used. These results are supported by numerical examples."
         },
         "t10":{
-            "title":"A divergence-free weak Galerkin method forquasi-Newtonian Stokes flows",
-            "speaker":"謝小平",
-            "abstract":"A weak Galerkin finite element method is proposed to solve incompressible quasi-Newtonian Stokes equations. We use piecewise polynomials of degrees k+1 (k ≥ 0) and  for the velocity and pressure in the interior of elements, respectively, and piecewise polynomials of degrees k and k+1 for the numerical traces of the velocity and pressure, respectively. Well-posedness of the discrete scheme is established. The method yields a globally divergence-free velocity approximation. Optimal a priori error estimates for the velocity gradient and pressure approximations are derived. Numerical results are provided to confirm the theoretical results. This is a joint work with Gang Chen and Xiaobo Zheng"
-        },
-        "t11":{
             "title":"High order methodes for fractional diffusion equations",
             "speaker":"許傳炬",
             "abstract":""
         },
-        "t12":{
-            "title":"Boundary error and order reduction of Runge-Kutta-Nyström method for wave equation",
-            "speaker":"鄧君豪",
-            "abstract":""
+        "t11":{
+            "title":"Energy Law Preserving Continuous Finite Element Methods for A Phase Field Model With Variable Densities",
+            "speaker":"林平",
+            "abstract":"We will consider a phase-field model for multiphase fluids with variable densities. A Quasi-Incompressible Navier-Stokes Cahn-Hilliard System for the model will be investigated. Under a minor reformulation of the system we show that there is a continuous energy law underlying the system, assuming that all variables have reasonable regularities. For the reformulated system we then design a continuous finite element method and a special temporal scheme where the energy law is preserved at the discrete level. Such a discrete energy law (almost the same as the continuous energy law) for a variable density two-phase flow model has not been established before with a continuous finite element. Some numerical results will be presented to demonstrate the capabilities of our numerical schemes. We will also show how to develop an energy law preserving continuous finite element method for a moving contact line problem."
         },
+
         "t13":{
             "title":"Solving Multi-Linear Systems with M-Tensors",
             "speaker":"魏益民",
@@ -148,9 +137,20 @@
             "speaker":"沈捷",
             "abstract":"The usual spectral methods will provide high-order accuracy for problems with smooth solutions. However, they may not work well for problems with singular solutions due to various facts such as corner singularities, non-matching boundary conditions, non-smooth coefficients. If the form of the singular expansion for the solution is known, we develop a Muntz Galerkin method which is based on specially tuned Muntz polynomials to deal with the singular behaviors of the underlying problems, and show that it provide optimal error estimates. On the other hand, if the Muntz Galerkin method is not applicable or efficient, we present a new extended spectral-Galerkin method which allows us to split it into two separate problems: one is to find an approximation for the smooth part by a usual spectral method, the other is to determine an approximation to the singular part with  terms by solving a  system. So the new method is very easy to implement, very efficient and is capable of providing very accurate approximations for a class of singular problems. We will present ample numerical results for a variety of problems with singular solutions, including fractional PDEs, to demonstrate the effectiveness of our approaches."
 
-        },"t18":{
+        },
+        "t16":{
+            "title":"A simple direct-forcing immersed boundary projection method with prediction-correction for fluid-solid interaction problems",
+            "speaker":"楊肅煜",
+            "abstract":"In this talk, we will introduce a simple and novel prediction-correction approach in conjunction with a direct-forcing immersed boundary projection method for simulating the dynamics of fluid-solid interaction problems, where the immersed solid object can be stationary or moving in the fluid with a prescribed velocity. The main idea of this approach is based on the introduction of a virtual force of discrete type, which is distributed on the whole solid body and appended to the fluid momentum equations to accommodate the no-slip boundary condition at the immersed solid boundary. More specifically, based on the rate of moment changes of the solid body, we first predict the virtual force at the grid points by using the difference between the prescribed solid velocities and the computed velocities which are obtained by applying the projection method to solve the incompressible Navier-Stokes equations on the whole domain in the absence of immersed solid object. This predicted virtual force is then added to the fluid momentum equations as an additional forcing term and again, we employ the projection method to correct the velocity field, pressure and virtual force. Such prediction-correction procedure can be iterated to generate a more general method, if necessary. Numerical experiments of several benchmark problems are performed to illustrate the simplicity and high performance of the prediction-correction approach. We find that our numerical results are in very good agreement with the previous works in the literature and in most cases, one correction step is good enough. This is joint work with Tzyy-Leng Horng, Po-Wen Hsieh and Cheng-Shu You."
+        },
+        "t17":{
             "title":"Long-time Camassa-Holm solution behavior and its computational details",
             "speaker":"許文翰",
+            "abstract":""
+        },
+        "t18":{
+            "title":"Boundary error and order reduction of Runge-Kutta-Nyström method for wave equation",
+            "speaker":"鄧君豪",
             "abstract":""
         }
     },
