@@ -360,7 +360,7 @@ if ($daycount>=0 && $daycount<$interval) {
                 </div>
                     <?php }?>
                 <?php }?>
-
+            </div>
                 <?php $total=count($data['tw_speaker']);?>
                 <?php $i=0;?>
                 <?php foreach ($data['tw_speaker'] as $key => $value) {?>
