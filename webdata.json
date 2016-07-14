@@ -22,8 +22,7 @@
             {"time":"16:00-16:30","content":"謝小平","place":"3173","talkid":"t4"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
             {"time":"17:00-17:30","content":"徐立偉","place":"3173","talkid":"t5"},
-            {"time":"17:30-18:30","content":"吳金典","place":"3173","talkid":"t6"},
-            {"time":"18:00-20:00","content":"台南小吃","place":"3173","talkid":0}
+            {"time":"17:30-18:00","content":"吳金典","place":"3173","talkid":"t6"}
         ],
         [
             {"time":"10:00-11:00","content":"王偉仲","place":"3173","talkid":"t8"},
@@ -35,8 +34,7 @@
             {"time":"15:30-16:00","content":"林平","place":"3173","talkid":"t11"},
             {"time":"16:00-16:30","content":"陳旻宏","place":"3173","talkid":"t12"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
-            {"time":"17:00-18:00","content":"魏益民","place":"3173","talkid":"t13"},
-            {"time":"18:00-20:00","content":"大東夜市","place":"3173","talkid":0}
+            {"time":"17:00-18:00","content":"魏益民","place":"3173","talkid":"t13"}
         ],
         [
             {"time":"10:00-11:00","content":"沈捷","place":"3173","talkid":"t15"},
@@ -61,33 +59,18 @@
     "cn_speaker":[
         {"cname":"沈捷","ename":"Jie Shen","affiliation":"美國普渡大學"},
         {"cname":"許傳炬","ename":"Chuanju Xu","affiliation":"福建省廈門大學數學科學學院"},
-        {"cname":"林玉閩","ename":"","affiliation":"福建省廈門大學數學科學學院"},
         {"cname":"魏益民","ename":"Yimin Wei","affiliation":"上海市復旦大學數學科學學院"},
-        {"cname":"張智民","ename":"Zhimin Zhang","affiliation":"北京計算科學研究中心"},
-        {"cname":"陳艷萍","ename":"Yanping Chen","affiliation":"廣東省華南師範大學數學科學學院"},
         {"cname":"張平文","ename":"Pingwen Zhang","affiliation":"北京市北京大學數學科學學院"},
         {"cname":"謝小平","ename":"Xiaoping Xie","affiliation":"四川省四川大學數學學院"},
-        {"cname":"楊志堅","ename":"Zhijian Yang","affiliation":"湖北省武漢大學數學與統計學院"},
-        {"cname":"謝資清","ename":"Ziqing Xie","affiliation":"中國長沙湖南師範大學數學與計算機科學學院"},
-        {"cname":"張然","ename":"Ran Zhang","affiliation":"吉林省吉林大學數學學院"},
         {"cname":"武海軍","ename":"Haijun Wu","affiliation":"江蘇省南京大學數學系"},
-        {"cname":"陳金如","ename":"Jinru Chen","affiliation":"江蘇省南京師範大學數學科學學院"},
-        {"cname":"許躍生","ename":"Yuesheng Xu","affiliation":"廣東省中山大學科學計算與計算機應用系"},
-        {"cname":"包剛","ename":"Gang Bao","affiliation":"浙江省浙江大學數學系"},
-        {"cname":"吳勃英","ename":"Boying Wu","affiliation":"黑龍江省哈爾濱工業大學數學系"},
-        {"cname":"李明","ename":"Ming Li","affiliation":"山西太原理工大學數學研究所"},
-        {"cname":"楊銀","ename":"Yin Yang","affiliation":"湘潭大學數學與計算科學學院"},
-        {"cname":"舒適","ename":"","affiliation":"湘潭大學數學與計算科學學院"},
         {"cname":"林平","ename":"Ping Lin","affiliation":"北京科技大學&Dundee University"}
     ],
     "tw_speaker":[
         {"cname":"陳正宗","affiliation":"國立臺灣海洋大學"},
         {"cname":"許文翰","affiliation":"國立台灣大學"},
-        {"cname":"薛克民","affiliation":"國立台灣大學數學系"},
         {"cname":"王偉仲","affiliation":"國立台灣大學數學系"},
         {"cname":"黃聰明","affiliation":"國立台灣師範大學數學系"},
         {"cname":"楊肅煜","affiliation":"國立中央大學數學系"},
-        {"cname":"王偉成","affiliation":"國立清華大學數學系"},
         {"cname":"林文偉","affiliation":"國立交通大學應用數學系"},
         {"cname":"賴明治","affiliation":"國立交通大學應用數學系"},
         {"cname":"吳金典","affiliation":"國立交通大學應用數學系"},
