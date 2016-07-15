@@ -832,7 +832,43 @@ if ($daycount>=0 && $daycount<$interval) {
                                     <p class="help-block text-danger"></p>
 
                                 </div>
+                                <div class="col-lg-12 text-center">
+                                    <h4 class="section-heading">代訂住宿</h4>
 
+                                </div>
+                                <div class="form-group">
+                                    <label for="room1" class="col-sm-4 control-label">7/25</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="room1" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="room1" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="room2" class="col-sm-4 control-label">7/26</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="room2" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="room2" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="room3" class="col-sm-4 control-label">7/27</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="room3" id="inlineRadio1" value="yes" required> 是
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="room3" id="inlineRadio2" value="no" required> 否
+                                    </label>
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
