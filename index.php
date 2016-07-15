@@ -353,14 +353,16 @@ if ($daycount>=0 && $daycount<$interval) {
                             </dl>
                         </li>
                     </ul>
+                    <?php //there is a bug.?>
                     <?php $i++;?>
                     <?php if ($i==ceil($total/2)) {
                         $i=0;
                     ?>
                 </div>
                     <?php }?>
+
                 <?php }?>
-            </div>
+
                 <?php $total=count($data['tw_speaker']);?>
                 <?php $i=0;?>
                 <?php foreach ($data['tw_speaker'] as $key => $value) {?>
