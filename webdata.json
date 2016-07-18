@@ -14,7 +14,7 @@
     "schedule":[
         [
             {"time":"10:00-11:00","content":"報到","place":"3173","talkid":0},
-            {"time":"11:00-11:30","content":"開幕","place":"3173","talkid":0},
+            {"time":"11:00-11:30","content":"開幕式暨茶點","place":"3173","talkid":0},
             {"time":"11:30-12:30","content":"張平文","place":"3173","talkid":"t1"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
             {"time":"14:00-15:00","content":"陳正宗","place":"3173","talkid":"t2"},
