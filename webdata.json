@@ -21,20 +21,21 @@
             {"time":"15:30-16:00","content":"林敏雄","place":"3173","talkid":"t3"},
             {"time":"16:00-16:30","content":"謝小平","place":"3173","talkid":"t4"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
-            {"time":"17:00-17:30","content":"徐立偉","place":"3173","talkid":"t5"},
-            {"time":"17:30-18:00","content":"吳金典","place":"3173","talkid":"t6"}
+            {"time":"17:00-18:00","content":"TBD","place":"3173","talkid":"t5"},
+            {"time":"18:00-20:00","content":"晚宴","place":"3173","talkid":0}
         ],
         [
             {"time":"10:00-11:00","content":"王偉仲","place":"3173","talkid":"t8"},
             {"time":"11:00-11:30","content":"茶點","place":"3173","talkid":0},
             {"time":"11:30-12:30","content":"黃聰明","place":"3173","talkid":"t9"},
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
-            {"time":"14:00-15:00","content":"許傳炬","place":"3173","talkid":"t10"},
+            {"time":"14:00-15:00","content":"魏益民","place":"3173","talkid":"t13"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
             {"time":"15:30-16:00","content":"林平","place":"3173","talkid":"t11"},
             {"time":"16:00-16:30","content":"陳旻宏","place":"3173","talkid":"t12"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
-            {"time":"17:00-18:00","content":"魏益民","place":"3173","talkid":"t13"}
+            {"time":"17:00-18:00","content":"吳金典","place":"3173","talkid":"t6"},
+            {"time":"18:00-20:00","content":"晚宴","place":"3173","talkid":0}            
         ],
         [
             {"time":"10:00-11:00","content":"沈捷","place":"3173","talkid":"t15"},
@@ -43,11 +44,10 @@
             {"time":"12:30-14:00","content":"午餐","place":"3173","talkid":0},
             {"time":"14:00-15:00","content":"許文翰","place":"3173","talkid":"t17"},
             {"time":"15:00-15:30","content":"茶點","place":"3173","talkid":0},
-            {"time":"15:30-16:00","content":"鄧君豪","place":"3173","talkid":"t18"},
-            {"time":"16:00-16:30","content":"李勇達","place":"3173","talkid":"t19"},
+            {"time":"15:30-16:00","content":"黃杰森","place":"3173","talkid":"t21"},
+            {"time":"16:00-16:30","content":"鄧君豪","place":"3173","talkid":"t18"},
             {"time":"16:30-17:00","content":"茶點","place":"3173","talkid":0},
-            {"time":"17:00-17:30","content":"武海軍","place":"3173","talkid":"t20"},
-            {"time":"17:30-18:00","content":"黃杰森","place":"3173","talkid":"t21"},
+            {"time":"17:00-18:00","content":"TBD","place":"3173","talkid":0},
             {"time":"18:00-20:00","content":"晚宴","place":"3173","talkid":0}
         ],
         [
