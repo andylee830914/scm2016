@@ -239,7 +239,7 @@ if ($daycount>=0 && $daycount<$interval) {
                         <a class="page-scroll" href="#about">關於會議</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#transport">交通方式</a>
+                        <a class="page-scroll" href="#transport">交通住宿</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#gallery">活動相簿</a>
@@ -561,7 +561,7 @@ if ($daycount>=0 && $daycount<$interval) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">交通方式</h2>
+                    <h2 class="section-heading">交通</h2>
                     <h3 class="section-subheading text-muted">Transportation</h3>
                 </div>
             </div>
@@ -619,6 +619,57 @@ if ($daycount>=0 && $daycount<$interval) {
                         在臺灣桃園國際機場搭乘計程車或接駁巴士到達臺灣高鐵桃園站。
                         <br>在臺灣高鐵桃園站搭乘高鐵到臺灣高鐵臺南站，至高鐵臺南站二樓轉乘通廊或一樓大廳1號出口前往臺鐵沙崙站搭乘臺鐵區間車前往臺南火車站，約30分鐘一班車，20分鐘可到達臺南火車站；成功大學自臺南火車站後站步行即可到達。
 
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading"></h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">住宿</h2>
+                    <h3 class="section-subheading text-muted">Accommodations</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-1">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-hotel fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="col-lg-11">
+                    <h2>天下大飯店</h2>
+                    <p style="font-size:16px;">
+                        70443台南市北區成功路202號
+                        <br>電話：<a href="tel:+88662290271">886-6-2290271</a>
+                        <br>網址：<a target="_blank" href="http://www.laplaza.com.tw">http://www.laplaza.com.tw</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-1">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-hotel fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="col-lg-11">
+                    <h2>成大會館</h2>
+                    <p style="font-size:16px;">
+                        701台南市東區大學路2號
+                        <br>電話：<a href="tel:+88662758999">886-6-275-8999</a>
+                        <br>網址：<a target="_blank" href="http://www.zendasuites.com.tw">http://www.zendasuites.com.tw</a>
+                        
                     </p>
 
                 </div>
