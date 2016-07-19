@@ -86,31 +86,46 @@
             "speaker":"陳正宗",
             "abstract":"In this talk, four parts will be given. First, the history of Taiwan BEM development is addressed. Second, the Dual BEM developed in Taiwan by NTOU/MSV group and the natural BEM in Mainland China by Prof. Feng and Yu are introduced. Third, not only academic research but also real engineering practice on the dual BEM will be shown. Engineering applications including sheetpile seepage, comb drive of MEMS, thin breakwater, thin airfoil, screen acoustics, stress reliever of solid rocket motor, crack and fatigue crack growth, will be introduced. Finally, I will mention recent works of NTOU/MSV group on near trap modes, rank deficiency problem in BEM and the Clifford valued BEM."
         },
+        "t3":{
+            "title":"Space-Time Fractional Advection-Diffusion Equation",
+            "speaker":"林敏雄",
+            "abstract":"In this talk, we propose practical numerical methods for solving a class of initial-boundary value problems of space-time fractional advection-diffusion equations. First, we propose an implicit method based on two-sided Gr\"{u}nwald formulae and discuss its stability and consistency. Then, we develop the preconditioned generalized minimal residual (preconditioned GMRES) method and preconditioned conjugate gradient normal residual (preconditioned CGNR) method with easily constructed preconditioners. Importantly, because resulting systems are Toeplitz-like, fast Fourier transform can be applied to significantly reduce the computational cost. We perform numerical experiments to demonstrate the efficiency of our preconditioners, even in cases with variable coefficients."
+        },
         "t4":{
             "title":"A divergence-free weak Galerkin method forquasi-Newtonian Stokes flows",
             "speaker":"謝小平",
             "abstract":"A weak Galerkin finite element method is proposed to solve incompressible quasi-Newtonian Stokes equations. We use piecewise polynomials of degrees k+1 (k ≥ 0) and  for the velocity and pressure in the interior of elements, respectively, and piecewise polynomials of degrees k and k+1 for the numerical traces of the velocity and pressure, respectively. Well-posedness of the discrete scheme is established. The method yields a globally divergence-free velocity approximation. Optimal a priori error estimates for the velocity gradient and pressure approximations are derived. Numerical results are provided to confirm the theoretical results. This is a joint work with Gang Chen and Xiaobo Zheng"
         },
+        "t8":{
+            "title":"Largescale Matrix Computations in Photonic Device Simulation and Data Analytics with the Latest CPU/GPU",
+            "speaker":"王偉仲",
+            "abstract":"The latest CPU and GPU are equipped with advanced features. On the other hand, a growing number of processors and accelerators are connected to form large parallel systems. However, to fully take advantages of these modern computer systems, we need to design algorithms by applying the properties of the target problems, the matrix structures, and the hardware architectures. In this talk, we focus on a direct linear system solver and a truncated singular value decomposition to show how we design new algorithms along the trend of fast-evolving processors and computer systems. The direct solver is called compressed hierarchical Schur algorithm (CHiS) and it is used to solve ill-conditioned linear systems arising in 3D photonic device simulations. The integrated singular value decomposition (iSVD) is designed to decompose large matrices arising in, for example, data analytics by using multiple random projections. Numerical results will be presented to show the advantages of the proposed algorithms."
+        },
         "t9":{
-            "title":"Computing Eigenmodes of Elliptic Operators Using Increasingly Flat Radial Basis Functions",
+            "title":"Fast Algorithms for Maxwell’s Equations",
             "speaker":"黃聰明",
-            "abstract":"Solving multi-dimensional eigenmodes problem for elliptic operator using radial basis functions (RBFs) was proposed by Platte and Driscoll. They convert the eigenmodes problem to an eigenpairs problem of a finite dimensional matrix. We formulate an approach based on using finite order interpolating polynomials as eigenfunctions for eigenmodes problem. We prove, under some simple conditions on the RBFs, two approaches converge when increasingly flat BRFs are being used. These results are supported by numerical examples."
-        },
-        "t10":{
-            "title":"High order methodes for fractional diffusion equations",
-            "speaker":"許傳炬",
-            "abstract":""
-        },
-        "t11":{
-            "title":"Energy Law Preserving Continuous Finite Element Methods for A Phase Field Model With Variable Densities",
-            "speaker":"林平",
-            "abstract":"We will consider a phase-field model for multiphase fluids with variable densities. A Quasi-Incompressible Navier-Stokes Cahn-Hilliard System for the model will be investigated. Under a minor reformulation of the system we show that there is a continuous energy law underlying the system, assuming that all variables have reasonable regularities. For the reformulated system we then design a continuous finite element method and a special temporal scheme where the energy law is preserved at the discrete level. Such a discrete energy law (almost the same as the continuous energy law) for a variable density two-phase flow model has not been established before with a continuous finite element. Some numerical results will be presented to demonstrate the capabilities of our numerical schemes. We will also show how to develop an energy law preserving continuous finite element method for a moving contact line problem."
+            "abstract":"We study how to eﬃciently solve the eigenvalue problems in computing band structure of three-dimensional photonic crystals, dispersive metallic photonic crystals and complex media with sample cubic (SC) lattice / face-centered cubic (FCC) lattice. The discretized Maxwell equations by Yee’s scheme result in large-scale generalized eigenvalue problems or nonlinear eigenvalue problems whose spectrum contains many zero eigenvalues which prevents existed eigenvalue solver from being eﬃcient. In this talk, we will introduce the eigendecomposition of the discrete double-curl and the singular value decomposition of the discrete single-curl operator and how to apply these decompositions to tackle the computational challenges for solving the associated large-scale eigenvalue problems. Based on these theoretical results, we develop a MATLAB package: FAME to eﬃciently compute the associated band structure for the three-dimensional Maxwell’s equations. In this talk, we will also demonstrate how to use our proposed package to solve the eigenvalue problems and show the associated eﬃciency."
         },
 
         "t13":{
             "title":"Solving Multi-Linear Systems with M-Tensors",
             "speaker":"魏益民",
             "abstract":"This talk is concerned with solving some structured multi-linear systems, especially focusing on the equations whose coffe cient tensors are M-tensors, or called M-equations for short. We prove that a nonsingular M-equation with a positive right-hand side always has a unique positive solution. Several iterative algorithms are proposed for solving multi-linear nonsingular M-equations, generalizing the classical iterative methods and the Newton method for linear systems. Furthermore, we apply the M-equations to some nonlinear di fferential equations and the inverse iteration for spectral radii of nonnegative tensors."
+        },
+        "t11":{
+            "title":"Energy Law Preserving Continuous Finite Element Methods for A Phase Field Model With Variable Densities",
+            "speaker":"林平",
+            "abstract":"We will consider a phase-field model for multiphase fluids with variable densities. A Quasi-Incompressible Navier-Stokes Cahn-Hilliard System for the model will be investigated. Under a minor reformulation of the system we show that there is a continuous energy law underlying the system, assuming that all variables have reasonable regularities. For the reformulated system we then design a continuous finite element method and a special temporal scheme where the energy law is preserved at the discrete level. Such a discrete energy law (almost the same as the continuous energy law) for a variable density two-phase flow model has not been established before with a continuous finite element. Some numerical results will be presented to demonstrate the capabilities of our numerical schemes. We will also show how to develop an energy law preserving continuous finite element method for a moving contact line problem."
+        },
+        "t12":{
+            "title":"High-Order Conservative Asymptotic-Preserving Schemes for Modeling Rarefied Gas Dynamical Flows with Boltzmann-BGK Equation",
+            "speaker":"陳旻宏",
+            "abstract":"High-order and conservative phase space direct solvers that preserve the Euler asymptotic limit of the Boltzmann-BGK equation for modelling rarefied gas flows are explored and studied. The approach is based on the conservative discrete ordinate method for velocity space by using Gauss Hermite or Simpson’s quadrature rule and conservation of macroscopic properties are enforced on the BGK collision operator. High-order asymptotic-preserving time integration is adopted and the spatial evolution is performed by high-order schemes including a finite difference weighted essentially non-oscillatory method and correction procedure via reconstruction schemes. An artificial viscosity dissipative model is introduced into the Boltzmann-BGK equation when the correction procedure via reconstruction scheme is used. The effects of the discrete velocity conservative property and accuracy of high-order formulations of kinetic schemes based on BGK model methods are provided. Extensive comparative tests with one-dimensional and two-dimensional problems in rarefied gas flows have been carried out to validate and illustrate the schemes presented. Potentially advantageous schemes in terms of stable large time step allowed and higher-order of accuracy are suggested."
+        },
+        "t6":{
+            "title":"A pipeline for 3D image processing including morphing and retargeting using geodesic spline landmark matching",
+            "speaker":"吳金典",
+            "abstract":"Due to the advance of 3D sensing technology, processing 3D sensing data and generating realistic 3D images become more and more important especially in the applications such as VR (virtual reality) and AR (augmented reality), etc. Some of the major challenges on 3D image processing includes (i) eﬃciently manage huge amount of data generated by scanner, (ii) merging 3D point data from various sensors and (iii) calibrating color maps for diﬀerent color sensors. Recently, Gu and Yau propose to compress the data using mean curvature H and conformal factor λ. In this work, we follow Gu and Yau’s idea and further apply it to 3D surface morphing and retargeting where matching landmark points on parametric domains, interpolating (H,λ) for generating remaining frames, and reconstructing 3D geometry and texture are essential. To dealt with point data merging and color calibration, we employee the ICP (iterative closest point) type of rigid registration and calibrate the color variations in the LAB color space.\n  In this talk, we shall brieﬂy review the theory of conformal global parametrization, the quaternion registration methods and optimization methods for color calibration. We shall also introduce the geodesic spline landmark matching using discrete Green function built by HCT ﬁnite element. Some of our numerical results will also be shown."
         },
         "t15":{
             "title":"Efficient and accurate  spectral methods for  PDEs  with singular solutions",
@@ -128,10 +143,15 @@
             "speaker":"許文翰",
             "abstract":"In this paper a three-step iterative solution algorithm for solving the two-component Camassa-Holm (2CH) equation, which involves only the first-order derivative terms, is presented. In the first solution step, the nonlinear convection equation for the timeevolving fluid velocity component along the horizontal direction is solved. In the second solution step, the equation to be solved is known as the inhomogeneous Helmholtz equation. Finally, the equation for modeling the transport of density is taken into account in the third solution step. The differential order of 2CH equation has been reduced in order to facilitate numerical scheme development in a comparatively smaller grid stencil. In this study, a new fifth-order spatially accurate upwinding combined compact difference scheme (UCCD5) which differs from that in [J. Comput. Phys. 230 (2011) 5399-5416] is developed in a four-point grid stencil for approximating the firstorder derivative term. For the purpose of retaining long-term discretely accurate Hamiltonians in the 2-component Camassa-Holm equation, the time integrator (or timestepping scheme) chosen in this study should conserve symplecticity. In addition to get a high resolution finite difference solution, we will in particular demonstrate the capability of applying the proposed numerical method to resolve the solutions of single peakon, peakon-antipeakon interaction and dam-break problems. We also address that both of the discrete Hamiltonians and Casimir functions are conserved well for all problems."
         },
+        "t21":{
+            "title":"Computing Eigenmodes of Elliptic Operators Using Increasingly",
+            "speaker":"黃杰森",
+            "abstract":"Solving multi-dimensional eigenmodes problem for elliptic operator using radial basis functions (RBFs) was proposed by Platte and Driscoll. They convert the eigenmodes problem to an eigenpairs problem of a finite dimensional matrix. We formulate an approach based on using finite order interpolating polynomials as eigenfunctions for eigenmodes problem. We prove, under some simple conditions on the RBFs, two approaches converge when increasingly flat BRFs are being used. These results are supported by numerical examples."
+        },
         "t18":{
-            "title":"Boundary error and order reduction of Runge-Kutta-Nyström method for wave equation",
+            "title":"Pseudo spectral method for Laplace operator",
             "speaker":"鄧君豪",
-            "abstract":""
+            "abstract":"In this talk we present a pseudo spectral penalty approach for constructing variable coefﬁcient Laplace operator. The construction methodology is based on mimicking the analytic Green function approach for Poisson equations. Such a framework leads to a numerical solution expression which is an analogue of the classical Green function solution representation. In addition we will present some results of the method and applications of the present method for time-dependent problems involving this type of operator."
         }
     },
     "contact":[
