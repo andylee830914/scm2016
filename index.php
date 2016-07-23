@@ -9,11 +9,11 @@ $timeplace = $begindate1.'~'.$enddate1.' @ '.$data['info']['place'];
 
 //control the schedule day
 $interval=date_diff($begindate, $enddate);
-$interval=$interval->days;
+$interval=(int)$interval->format("%r%a");
 $today=date_create('');
-$nowdate = date_diff($today, $begindate);
-$daycount=$nowdate->days;
-if ($daycount>=0 && $daycount<$interval) {
+$nowdate = date_diff($begindate,$today);
+$daycount=(int)$nowdate->format("%r%a");
+if ($daycount>=0 && $daycount<=$interval) {
     $daycount;
 }else{
     $daycount="";
