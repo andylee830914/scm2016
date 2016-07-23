@@ -60,6 +60,9 @@ if ($daycount>=0 && $daycount<=$interval) {
 
 
     }
+    .media-body{
+        font-size:18px;
+    }
 
     ul{
         font-size:16px;
@@ -400,6 +403,17 @@ if ($daycount>=0 && $daycount<=$interval) {
                 </div>
             </div>
             <div class="row text-center">
+            <h4>會議地點</h4>
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-default">數學系館 3174</button>
+                </div>
+                
+            </div>
+            <br>
+            <br>
+             <div class="row text-center">   
+                
+                
                 <?php foreach ($data['schedule'] as $key => $value) {?>
                 <div class="col-md-3" id="schedule<?php echo $key;?>">
                     <span class="fa-stack fa-4x">
