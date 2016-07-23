@@ -341,9 +341,9 @@ if ($daycount>=0 && $daycount<=$interval) {
             </div>
             <div class="row">
                 <?php $total=count($data['cn_speaker']);?>
-                <?php $i=0;?>
+                <?php $i=0;$nowcolumn=0;?>
                 <?php foreach ($data['cn_speaker'] as $key => $value) {?>
-                <?php if ($i==0) {?>
+                <?php if ($i==0) { ?>
                 <div class="col-md-3 speaker">
                 <?php }?>
                     <ul>
@@ -356,18 +356,19 @@ if ($daycount>=0 && $daycount<=$interval) {
                             </dl>
                         </li>
                     </ul>
-                    <?php //there is a bug.?>
                     <?php $i++;?>
-                    <?php if ($i==ceil($total/2)) {
+                    <?php if ($i==ceil($total/2)  ) {
                         $i=0;
+                        $nowcolumn++;
                     ?>
                 </div>
-                    <?php }?>
+                <?php }elseif($i==floor($total/2) && $nowcolumn==1 ){?>
+                </div>
 
                 <?php }?>
-
+                <?php }?>
                 <?php $total=count($data['tw_speaker']);?>
-                <?php $i=0;?>
+                <?php $i=0;$nowcolumn=0;?>
                 <?php foreach ($data['tw_speaker'] as $key => $value) {?>
                 <?php if ($i==0) {?>
                 <div class="col-md-3 speaker">
@@ -387,7 +388,10 @@ if ($daycount>=0 && $daycount<=$interval) {
                         $i=0;
                     ?>
                 </div>
-                    <?php }?>
+                <?php }elseif($i==floor($total/2) && $nowcolumn==1 ){?>
+                </div>
+
+                <?php }?>
                 <?php }?>
 
             </div>
