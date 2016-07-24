@@ -20,7 +20,7 @@
             {"time":"12:30-14:00","content":"午餐","place":"3174","talkid":0},
             {"time":"14:00-15:00","content":"陳正宗","place":"3174","talkid":"t2"},
             {"time":"15:00-15:30","content":"茶點","place":"3174","talkid":0},
-            {"time":"15:30-16:00","content":"林敏雄","place":"3174","talkid":"t3"},
+            {"time":"15:30-16:00","content":"林平","place":"3174","talkid":"t11"},
             {"time":"16:00-16:30","content":"謝小平","place":"3174","talkid":"t4"}
         ],
         [
@@ -30,7 +30,7 @@
             {"time":"12:30-14:00","content":"午餐","place":"3174","talkid":0},
             {"time":"14:00-15:00","content":"魏益民","place":"3174","talkid":"t13"},
             {"time":"15:00-15:30","content":"茶點","place":"3174","talkid":0},
-            {"time":"15:30-16:00","content":"林平","place":"3174","talkid":"t11"},
+            {"time":"15:30-16:00","content":"林敏雄","place":"3174","talkid":"t3"},
             {"time":"16:00-16:30","content":"陳旻宏","place":"3174","talkid":"t12"},
             {"time":"16:30-17:00","content":"茶點","place":"3174","talkid":0},
             {"time":"17:00-18:00","content":"吳金典","place":"3174","talkid":"t6"},
