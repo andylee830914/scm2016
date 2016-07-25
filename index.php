@@ -712,7 +712,7 @@ if ($daycount>=0 && $daycount<=$interval) {
                 <?php ?>
                     <?php foreach (glob("img/gallery/day".$i."/{*_tn.jpg,*_tn.JPG}", GLOB_BRACE) as $filename) {?>
                     <?php $filename1=explode("/", $filename);?>
-                    <?php $filename1=explode(".", $filename1[2]);?>
+                    <?php $filename1=explode(".", $filename1[3]);?>
                     <?php $filename1=str_replace("_tn","",$filename1[0]);?>                    
                     <?php $filename2=str_replace("_tn","",$filename);?>
                     
