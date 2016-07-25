@@ -20,12 +20,10 @@ $.getJSON("webdata.json", function(json) {
         var day=-1;
     }
     list=$( "#schedule"+day+" div" ).children();
-    $(window).scroll(function(){
-        console.log(isScrolledIntoView("#schedule"));                        
+    $(window).scroll(function(){                      
         if (isScrolledIntoView("#schedule"+day)) {
             var today_schedule=timetable[day];
-            $.each(today_schedule,function(d) {
-                console.log('hello');                
+            $.each(today_schedule,function(d) {             
                 d1=today_schedule[d];
                 time=d1.time.split('-');
                 time1=time[0].split(':');
@@ -35,7 +33,6 @@ $.getJSON("webdata.json", function(json) {
                 time_toc=today.setHours(time2[0],time2[1]);
                 $(list[d]).removeClass("active");
                 if(now>=time_tic&&now<time_toc){
-                    console.log('opps');
                     $(list[d]).addClass("active");
                 };               
             });
