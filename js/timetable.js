@@ -22,7 +22,7 @@ $.getJSON("webdata.json", function(json) {
     }
     list=$( "#schedule"+day+" div" ).children();
     $(window).scroll(function(){                      
-        if (isScrolledIntoView("#schedule"+day)) {
+        if (isScrolledIntoView("#schedule")) {
             var today_schedule=timetable[day];
             $.each(today_schedule,function(d) {             
                 d1=today_schedule[d];
