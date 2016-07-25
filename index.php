@@ -42,6 +42,7 @@ if ($daycount>=0 && $daycount<=$interval) {
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/cwtexhei.css" rel="stylesheet" type="text/css">    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -58,7 +59,7 @@ if ($daycount>=0 && $daycount<=$interval) {
         font-size:25px;
         font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-
+     
     }
     .media-body{
         font-size:18px;
