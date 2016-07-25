@@ -120,7 +120,7 @@ if ($daycount>=0 && $daycount<$interval) {
     li.my-social-buttons p{
         line-height:40px;
         height: 40px;
-        width: calc(100%-50px);
+        width: calc(100% - 50px);
         margin-left: 10px;
         float:left;
 
