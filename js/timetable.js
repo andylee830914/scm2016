@@ -2,10 +2,11 @@ function isScrolledIntoView(elem)
 {   
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
-
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    //console.log((elemBottom >= docViewBottom) && (elemTop <= docViewTop));
+    
+    return ((elemBottom >= docViewBottom) && (elemTop <= docViewTop));
 }
 $.getJSON("webdata.json", function(json) {
     var timetable=json.schedule;
