@@ -251,9 +251,9 @@ if ($daycount>=0 && $daycount<=$interval) {
                     <li>
                         <a class="page-scroll" href="#team">聯絡我們</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#contact">報名</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -950,7 +950,7 @@ if ($daycount>=0 && $daycount<=$interval) {
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">確定報名</button>
+                                <button type="submit" class="btn btn-xl" disabled="disabled">報名已截止</button>
                             </div>
                         </div>
                     </form>
