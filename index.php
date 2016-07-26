@@ -42,6 +42,7 @@ if ($daycount>=0 && $daycount<=$interval) {
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/cwtexhei.css" rel="stylesheet" type="text/css">    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -58,7 +59,7 @@ if ($daycount>=0 && $daycount<=$interval) {
         font-size:25px;
         font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-
+     
     }
     .media-body{
         font-size:18px;
@@ -85,15 +86,15 @@ if ($daycount>=0 && $daycount<=$interval) {
     .mythumb{
         display:inline-block;
         position:relative;
-        width:160px;
-        height:160px;
+        width:100px;
+        height:100px;
         text-align : center;
-        line-height : 160px;
+        line-height : 100px;
         overflow:hidden;
     }
     .mythumb img{
-        float: left;
-        line-height: 160px;
+        float: center;
+        line-height: 100px;
         text-align: center;
         width:auto;
         height:100%;
@@ -705,19 +706,26 @@ if ($daycount>=0 && $daycount<=$interval) {
                     <h3 class="section-subheading text-muted">Gallery</h3>
                 </div>
             </div>
+            <?php for($i =1 ; $i <=1 ; $i++){?>
             <div class="row">
+                <h3>Day <?php echo $i ;?></h3>
                 <div id="links">
-                <?php /*?>
-                    <?php foreach (glob("img/gallery/{*.JPG,*.jpg}", GLOB_BRACE) as $filename) {?>
+                <?php ?>
+                    <?php foreach (glob("img/gallery/day".$i."/{*_tn.jpg,*_tn.JPG}", GLOB_BRACE) as $filename) {?>
                     <?php $filename1=explode("/", $filename);?>
-                    <?php $filename1=explode(".", $filename1[2]);?>
-                        <a href="<?php echo $filename;?>" title="<?php echo $filename1[0];?>" data-gallery class="mythumb">
-                            <img src="<?php echo $filename;?>" alt="<?php echo $filename1[0];?>">
+                    <?php $filename1=explode(".", $filename1[3]);?>
+                    <?php $filename1=str_replace("_tn","",$filename1[0]);?>                    
+                    <?php $filename2=str_replace("_tn","",$filename);?>
+                    
+                        <a href="<?php echo $filename2;?>" title="<?php echo $filename1;?>" data-gallery class="mythumb">
+                            <img src="<?php echo $filename;?>" alt="<?php echo $filename1;?>">
                         </a>
                     <?php } ?>
-                <?php */?>
+                <?php ?>
                 </div>
             </div>
+            <?php } ?>
+            
 
         </div>
 
