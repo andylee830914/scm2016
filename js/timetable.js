@@ -30,8 +30,8 @@ $.getJSON("webdata.json", function(json) {
                 time1=time[0].split(':');
                 time2=time[1].split(':');
                 now=new Date();
-                time_tic=today.setHours(time1[0],time1[1]);
-                time_toc=today.setHours(time2[0],time2[1]);
+                time_tic=today.setHours(time1[0],time1[1],0);
+                time_toc=today.setHours(time2[0],time2[1],0);
                 $(list[d]).removeClass("active");
                 if(now>=time_tic&&now<time_toc){
                     $(list[d]).addClass("active");
