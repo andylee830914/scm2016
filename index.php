@@ -269,7 +269,7 @@ if ($daycount>=0 && $daycount<=$interval) {
                     <div class="en-heading"><?php echo $data['info']['en_title'];?></div>
                 </div>
                 <div class="intro-lead-in"><?php echo $timeplace;?></div>
-                <a href="#contact" class="page-scroll btn btn-xl">立即報名</a>
+                <a href="#gallery" class="page-scroll btn btn-xl">活動回顧</a>
             </div>
         </div>
     </header>
