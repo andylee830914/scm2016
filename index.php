@@ -706,7 +706,7 @@ if ($daycount>=0 && $daycount<=$interval) {
                     <h3 class="section-subheading text-muted">Gallery</h3>
                 </div>
             </div>
-            <?php for($i =1 ; $i <=2 ; $i++){?>
+            <?php for($i =1 ; $i <=3 ; $i++){?>
             <div class="row">
                 <h3>Day <?php echo $i ;?></h3>
                 <div id="links">
