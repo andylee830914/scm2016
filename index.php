@@ -231,10 +231,10 @@ if ($daycount>=0 && $daycount<=$interval) {
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#news">最舊消息</a>
+                        <a class="page-scroll" href="#news">最新消息</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#speaker">邀請冗員</a>
+                        <a class="page-scroll" href="#speaker">邀請講員</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#schedule<?php echo $daycount;?>">大會議程</a>
